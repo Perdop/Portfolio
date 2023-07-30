@@ -1,0 +1,95 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@500&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Inter', sans-serif;
+}
+
+main{
+    background-color: rgb(161, 205, 216);
+    width: 100vw;
+    height: 100vh;
+    overflow-y: scroll;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+main nav{
+    width: 100%;
+    height: 10%;
+    display: flex;
+    align-items: center;
+}
+main nav input{
+    margin-left: 2vw;
+    height: 4.9vh;
+    width: 60%;
+    border: solid gray 1px;
+    border-radius: 8px 0 0 8px;
+    text-indent: 1vw;
+    font-size: clamp(0.7rem, 2vw, 3rem);
+    outline: none;
+}
+main nav input:focus{
+    border: solid 1px black;    
+}
+main nav button{
+    margin-right: 2vw;
+    background-color: rgb(66, 66, 66);
+    color: rgb(241, 241, 241);
+    height: 5.3vh;
+    width: 13%;
+    border: solid 1px gray;
+    border-radius:  0 10px 10px 0;
+    font-size: clamp(0.5rem, 1.8vw, 2.6rem);;
+}
+
+main .shortData{
+    width: 50%;
+    height: 40vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: column;
+    color: rgb(36, 36, 36);
+    overflow-y:scroll;
+}
+main .shortData::-webkit-scrollbar{
+    display: none;
+}
+main .shortData h1{
+    font-size: clamp(1rem, 3vw, 3rem);
+}
+main .shortData h2{
+    font-size: clamp(2rem,12vw,15rem);
+}
+main .shortData h3{
+    font-size: clamp(1rem, 3vw, 5rem);
+}
+
+main .longData{
+    margin-top: 5vh;
+    width: 100%;
+    height: 40vh;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    color: rgb(49, 48, 48);
+    text-align: center;
+}
+main .longData .weather h1{
+    font-size: 1rem;
+}
+main .longData .borderLongData{
+    border: solid 1px gray;
+    border-radius: 20px;
+    width: 80%;
+}
+main .longData .minTemp{
+    margin-top: 2%;
+}
+main .longData .maxTemp{
+    margin-top: 2%;
+}
