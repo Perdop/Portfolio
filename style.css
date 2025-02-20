@@ -1,0 +1,117 @@
+@import url('https://fonts.googleapis.com/css2?family=Audiowide&family=Iceland&display=swap');
+
+.iceland-regular {
+    font-family: "Iceland", serif;
+    font-weight: 400;
+    font-style: normal;
+}
+.audiowide-regular {
+    font-family: "Audiowide", serif;
+    font-weight: 400;
+    font-style: normal;
+}
+  
+  
+
+*{
+    padding: 0;
+    margin: 0;
+}
+
+header{
+    background: rgb(241,26,30);
+    background: linear-gradient(123deg, rgba(241,26,30,1) 0%, rgba(139,15,17,1) 100%);
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column; 
+}
+
+nav{
+    padding: 4cqmin;
+    height: 6vh;
+    display: flex;
+    align-items: center;
+}
+#githubLink{
+    height: 100%;
+    aspect-ratio: 1/1;
+    background: url(img/githubDark.svg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+#language{
+    background: none;
+    border: none;
+    font-size:6vh;
+    margin-left: auto;
+}
+#lightMode{
+    margin-left: 3vh;
+    background: url(img/sun.png);
+    height: 90%;
+    aspect-ratio: 1/1;
+    background-position: center;
+    background-size: 100%;
+    border: 0;
+}
+#menuBar{
+    margin-left: 3vh;
+    background: url(img/menu.png);
+    height: 110%;
+    aspect-ratio: 1/1;
+    background-position: center;
+    background-size: 100%;
+    border: 0;
+}
+header h1{
+    color: white;
+    margin-top: 15vh;
+    text-align: center;
+    font-size: clamp(15px, 12cqmin, 50px);
+}
+header h2{
+    color: white;
+    text-align: center;
+    text-align:center;
+    margin: 0 auto;
+    margin-top: 5px;
+    width: 80cqmin;
+    font-size: clamp(12px, 4cqmin, 40px);
+}
+.headerShortCuts{
+    margin: 0 auto;
+    margin-top: 5vh;
+    display: flex;
+    justify-content: space-between;
+}
+.headerShortCuts a{
+    text-decoration: none;
+    color: white;
+    font-size: clamp(20px, 4.5cqmin, 40px);
+}
+#about{
+    margin-left: 4vw;
+}
+
+.blade{
+    background-color: rebeccapurple;
+    height: 12vh;
+    width: 100vw;
+    margin-top: auto;
+}
+.bladeContainer{
+    background-image: ;
+}
+
+
+@media(max-width:300px){
+    .headerShortCuts{
+        flex-direction: column;
+    }
+    #about{
+        margin-left: 0;
+        margin-top: 10px;
+    }
+}
