@@ -18,13 +18,17 @@
     margin: 0;
 }
 
+body{
+    overflow-x: hidden;
+}
+
 header{
     background: rgb(241,26,30);
     background: linear-gradient(123deg, rgba(241,26,30,1) 0%, rgba(139,15,17,1) 100%);
     width: 100vw;
     height: 100vh;
     display: flex;
-    flex-direction: column; 
+    flex-direction: column;
 }
 
 nav{
@@ -96,15 +100,46 @@ header h2{
 }
 
 .blade{
-    background-color: rebeccapurple;
-    height: 12vh;
     width: 100vw;
     margin-top: auto;
 }
 .bladeContainer{
-    background-image: ;
+    display: flex;
+}
+.bladeImg{
+    width: 80%;
+    aspect-ratio: 12/1;
+}
+.bladeContainer p{
+    color: white;
+    transform: rotate(90deg);
+    width: max-content;
+    height: min-content;
+    font-size: clamp(16px, 4vw ,45px);
+    margin: auto 5vw 1vw auto;
 }
 
+main{
+    width: 100vw;
+}
+.projects{
+    background: rgb(127,127,127);
+    background: linear-gradient(180deg, rgba(127,127,127,1) 88%, rgba(192,192,192,1) 100%);
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 5vw;
+}
+.projects h1{
+    color: white;
+    width: 100vw;
+    text-align: center;
+}
+.projectsContainer{
+    background-color: red;
+    width: 50%;
+    height: 30vh;
+}
 
 @media(max-width:300px){
     .headerShortCuts{
@@ -113,5 +148,9 @@ header h2{
     #about{
         margin-left: 0;
         margin-top: 10px;
+    }
+
+    .bladeImg{
+        aspect-ratio: 7/1;
     }
 }
