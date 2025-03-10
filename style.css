@@ -29,6 +29,7 @@ header{
     height: 100vh;
     display: flex;
     flex-direction: column;
+    z-index: 10;
 }
 
 nav{
@@ -124,22 +125,87 @@ main{
 }
 .projects{
     background: rgb(127,127,127);
-    background: linear-gradient(180deg, rgba(127,127,127,1) 88%, rgba(192,192,192,1) 100%);
+    background: linear-gradient(180deg, rgba(127,127,127,1) 88%, #393939 100%);
     display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    gap: 5vw;
+    flex-direction: column;
+    padding-bottom: 8vh;
+}
+.projectsRow{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
 }
 .projects h1{
     color: white;
     width: 100vw;
     text-align: center;
+    font-size: 5vw;
 }
 .projectsContainer{
-    background-color: red;
-    width: 50%;
-    height: 30vh;
+    margin-top: 3vw;
+    width: 30%;
+    aspect-ratio: 8/10;
 }
+.projectImgLayout{
+    border-radius: 2cqmin;
+    border: solid 1px black;
+    width: 100%;
+    aspect-ratio: 1/1;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.projectImgLayout img{
+    width: 100%;
+}
+.projectsTags{
+    margin-top: 20px;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2cqmin;
+    justify-content: center;
+}
+.languageTag{
+    background-color: #D9D9D9;
+    border-radius: 1cqmin;
+    height: 1.3vw;
+    padding: 1cqmin;
+    align-items: center;
+    display: flex;
+    gap: 5px;
+    font-size: clamp(16px,1.3vw,30px);
+    overflow: hidden;
+}
+.languageTag:hover{
+    outline: solid 3px #8FBE9E;
+    font-size: clamp(16px,1.4vw,30px);
+}
+.languageTag img{
+    height: 100%;
+    aspect-ratio: 1/1;
+}
+.projectsContainer h2{
+    color: white;
+    font-size: clamp(30px,4.5vw,100px);
+    text-align: center;
+    margin-top: 5px;
+}
+.projectTxt{
+    color: white;
+    text-indent: 2vw;
+    font-size: clamp(16px,1.5vw,30px);
+    text-align: center;
+}
+
+.about{
+    height: 95vh;
+    width: 100vw;
+    background-color: #393939;
+    background: url(img/Screenshot\ from\ 2025-03-10\ 16-29-30.png  );
+}
+
 
 @media(max-width:300px){
     .headerShortCuts{
@@ -154,3 +220,13 @@ main{
         aspect-ratio: 7/1;
     }
 }
+
+@media(max-width:500px){
+    .projectsRow{
+        flex-direction: column;
+    }
+    .projectsContainer{
+        width: 80%;
+    }
+}
+
