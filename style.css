@@ -16,6 +16,7 @@
 *{
     padding: 0;
     margin: 0;
+    transition: 0.3s;
 }
 
 body{
@@ -37,6 +38,14 @@ nav{
     height: 6vh;
     display: flex;
     align-items: center;
+}
+nav button:hover{
+    filter: invert(100%);
+    scale: 120%;
+}
+nav a:hover{
+    filter: invert(100%);
+    scale: 120%;
 }
 #githubLink{
     height: 100%;
@@ -74,7 +83,7 @@ header h1{
     color: white;
     margin-top: 15vh;
     text-align: center;
-    font-size: clamp(15px, 12cqmin, 50px);
+    font-size: clamp(15px, 11cqmin, 80px);
 }
 header h2{
     color: white;
@@ -83,21 +92,25 @@ header h2{
     margin: 0 auto;
     margin-top: 5px;
     width: 80cqmin;
-    font-size: clamp(12px, 4cqmin, 40px);
+    font-size: clamp(30px, 4cqmin, 40px);
 }
 .headerShortCuts{
     margin: 0 auto;
     margin-top: 5vh;
     display: flex;
     justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 4vw;
 }
 .headerShortCuts a{
     text-decoration: none;
     color: white;
-    font-size: clamp(20px, 4.5cqmin, 40px);
+    font-size: clamp(30px, 4.5cqmin, 40px);
 }
-#about{
-    margin-left: 4vw;
+.headerShortCuts a:hover{
+    text-shadow: 0 0 20px rgb(255, 255, 255);
+    font-size: clamp(20px, 4.7cqmin, 40px);
 }
 
 .blade{
@@ -110,6 +123,11 @@ header h2{
 .bladeImg{
     width: 80%;
     aspect-ratio: 12/1;
+    z-index: 1;
+    background: url(img/portfolioBladeDark.png);
+    background-size: 100%;
+    background-position: bottom;
+    background-repeat: no-repeat;
 }
 .bladeContainer p{
     color: white;
@@ -118,6 +136,29 @@ header h2{
     height: min-content;
     font-size: clamp(16px, 4vw ,45px);
     margin: auto 5vw 1vw auto;
+}
+.bladeLine{
+    background-color: black;
+    height: 2px;
+    width: 100%;
+    position:absolute;
+    z-index: 0;
+    bottom: 0;
+}
+.bladePerdop{
+    position:absolute;
+    z-index: 2;
+    bottom: 3.3vw;
+    left: 2vw;
+    font-size: 1.2vw;
+}
+.bladeProjetos{
+    color: white;
+    position:absolute;
+    z-index: 2;
+    bottom: 0.7vw;
+    left: 2vw;
+    font-size: 1.5vw;
 }
 
 main{
@@ -144,7 +185,6 @@ main{
 .projectsContainer{
     margin-top: 3vw;
     width: 30%;
-    aspect-ratio: 8/10;
 }
 .projectImgLayout{
     border-radius: 2cqmin;
@@ -155,6 +195,10 @@ main{
     display: flex;
     align-items: center;
     justify-content: center;
+}
+.EcoExplora .projectImgLayout:hover{   
+    outline: solid 2px  #2c4766;
+    border: solid 1px #2c4766;
 }
 .projectImgLayout img{
     width: 100%;
@@ -178,8 +222,8 @@ main{
     font-size: clamp(16px,1.3vw,30px);
     overflow: hidden;
 }
-.languageTag:hover{
-    outline: solid 3px #8FBE9E;
+.EcoExplora .languageTag:hover{
+    outline: solid 3px #2c4766;
     font-size: clamp(16px,1.4vw,30px);
 }
 .languageTag img{
@@ -192,21 +236,196 @@ main{
     text-align: center;
     margin-top: 5px;
 }
+.EcoExplora h2:hover{
+    scale: 105%;
+    color: #2c4766;
+    text-shadow: 0 0 20px rgb(255, 255, 255);
+}
 .projectTxt{
     color: white;
     text-indent: 2vw;
     font-size: clamp(16px,1.5vw,30px);
     text-align: center;
 }
-
-.about{
-    height: 95vh;
+.tribalImg{
     width: 100vw;
+    height: 100vh;
+    background: url(img/tribalDark.png  );
+    opacity: 40%;
+    z-index: -1;
+    position:absolute;
+}
+.tribalBg{
+    width: 100vw;
+    height: 100vh;
+    z-index: -2;
+    position:absolute;
     background-color: #393939;
-    background: url(img/Screenshot\ from\ 2025-03-10\ 16-29-30.png  );
+}
+.about{
+    height: 100vh;
+    width: 100vw;
+    color: white;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.aboutRow{
+    width: 90%;
+    display: flex;
+    height: 50%;
+}
+.aboutTxt{
+    height: 100%;
+}
+.aboutTxt h1{
+    font-size: clamp(15px, 10cqmin, 80px);
+    white-space: nowrap;
+    margin-right: 10px;
+    margin-bottom: 10px;
+}
+.aboutH1Line{
+    background-color: white;
+    width:78%;
+    height: 2px;
+    margin: auto 0 auto auto;
+}
+.aboutTxt p{
+    font-size: clamp(12px, 5.1cqmin, 2.8vmax);
+    line-height: 1.1;
+}
+.aboutImg{
+    border: none;
+    width:25%;
+}
+.aboutImgImg{
+    border: solid 5px #B14242;
+    border-radius: 100%;
+    background: url(img/bladeProfile.png  );
+    width: 45cqmin;
+    max-width: 90%;
+    float: right;
+    aspect-ratio: 1/1   ;
+    background-position:center;
+    background-size: 100%;
+    box-shadow: 0 0 15px #B14242;
+}
+.aboutRow2{
+    display: flex;
+    height: 45%;
+    width: 90%;
+    gap: 5%;
+}
+.aboutLinks{
+    background-color: rgba(0, 0, 0, 0.310);
+    width: 30%;
+    height: 90%;
+    border-radius: 1.5cqmin;
+    padding-left: 3cqmin;
+    padding-right: 3cqmin;
+}
+.aboutLinksRow{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 100%;
+    margin-top: 2cqmin;
+}
+.aboutLinks a{
+    color: white;
+    text-decoration: none;
+    font-size: clamp(12px, 5.1cqmin, 2.8vmax);
+}
+.aboutLinks a:hover{
+    color: #B14242;
+}
+.aboutRow2 p{
+    width: 65%;
+    font-size: clamp(12px, 5.1cqmin, 2.8vmax);
+    line-height: 1.1;
 }
 
-
+/* menu */
+#darkModeCheck:checked ~ header nav a {
+    filter: invert(100%);
+}
+#darkModeCheck:checked ~ header nav button {
+    filter: invert(100%);
+}
+#darkModeCheck:checked ~ header nav a:hover {
+    filter: invert(0%);
+}
+#darkModeCheck:checked ~ header nav button:hover {
+    filter: invert(0%);
+}
+#darkModeCheck:checked ~ header nav #lightMode {
+    background: url(img/moon.png);
+    background-size: 80%;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+#darkModeCheck:checked ~ main .projects{
+    background: linear-gradient(180deg, #E6DFDF 88%, #ffffff 100%);
+}
+#darkModeCheck:checked ~ main .projects h1{
+    color: black;
+}
+#darkModeCheck:checked ~ main .EcoExplora h2:hover{
+    scale: 105%;
+    color: #2c4766;
+    text-shadow: 0 0 20px rgb(0, 0, 0);
+}
+#darkModeCheck:checked ~ main .projects p{
+    color: black;
+}
+#darkModeCheck:checked ~ main .projects h2{
+    color: black;
+}
+#darkModeCheck:checked ~ main .languageTag{
+    background-color: #B7B5B5;
+}
+#darkModeCheck:checked ~ main .tribalBg{
+    background-color: white;
+}
+#darkModeCheck:checked ~ main .tribalImg{
+    width: 100vw;
+    height: 100vh;
+    background: url(img/tribalLight.png  );
+    opacity: 40%;
+    z-index: -1;
+    position:absolute;
+}
+#darkModeCheck:checked ~ main .about{
+    color: black;
+}
+#darkModeCheck:checked ~ main .about a{
+    color: black;
+}
+#darkModeCheck:checked ~ main .aboutH1Line {
+    background-color: black;
+}
+#darkModeCheck:checked ~ main .aboutLinks {
+    background-color: rgba(0, 0, 0, 0.767);
+}
+#darkModeCheck:checked ~ main .aboutLinks a{
+    color: rgb(255, 255, 255);
+}
+#darkModeCheck:checked ~ main .aboutLinks a:hover{
+    color: #B14242;
+}
+#darkModeCheck:checked ~ header .bladeImg{
+    background: url(img/portfolioBladeLight.png);
+    background-size: 100%;
+    background-position: bottom;
+    background-repeat: no-repeat;
+    width: 80%;
+    aspect-ratio: 12/1;
+    z-index: 1;
+}
+#darkModeCheck:checked ~ header .bladeProjetos{
+    color: black;
+}
 @media(max-width:300px){
     .headerShortCuts{
         flex-direction: column;
@@ -216,9 +435,7 @@ main{
         margin-top: 10px;
     }
 
-    .bladeImg{
-        aspect-ratio: 7/1;
-    }
+
 }
 
 @media(max-width:500px){
@@ -227,6 +444,33 @@ main{
     }
     .projectsContainer{
         width: 80%;
+    }
+    .headerShortCuts{
+        flex-direction: column;
+    }
+    .about{
+        height: max-content;
+    }
+    .aboutRow{
+        height: 100%;
+    }
+    .aboutImg{
+        position: absolute;
+        right: 4%;
+        width: 10%;
+    }
+    .aboutRow2{
+        flex-direction: column-reverse;
+    }
+    .aboutRow2 p{
+        margin-top: 10px;
+        width: 100%;
+        margin-bottom: 10px;
+    }
+    .aboutLinks{
+        width: 90%;
+        margin-bottom: 20px;
+        padding-bottom: 8px;
     }
 }
 

@@ -7,32 +7,36 @@
     <script src="script.js" defer></script>
     <title>Portfolio</title>
 </head>
+<input type="checkbox" name="" id="darkModeCheck" style="display: none;">
 <body>
     <header>
         <nav>
             <a href="http://github.com/Perdop" id="githubLink"></a>
-            <button id="language" class="iceland-regular"></button>
-            <button id="lightMode"></button>
+            <button id="language" class="iceland-regular">EN</button>
+            <button id="lightMode" ></button>
             <button id="menuBar"></button>
         </nav>
         <h1 class="audiowide-regular">Pedro Santana</h1>
-        <h2 class="iceland-regular">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed in metus facilisis, lacinia ante sed, accumsan justo.</h2>
+        <h2 id="pedroResumo" class="iceland-regular"></h2>
         <section class="headerShortCuts">
             <a href="" id="curriculum" class="iceland-regular">-> Curriculum</a>
-            <a href="" id="about" class="iceland-regular">-> Sobre mim</a>
+            <a href="" id="about" class="iceland-regular"></a>
         </section>
         <div class="blade">
             <span class="bladeContainer">
-                <img src="img/portfolioBladeDark.png" alt="" class="bladeImg">
+                <span class="bladeImg"></span>
                 <p class="iceland-regular">-></p>
+                <span class="bladeLine"></span>
+                <span class="bladePerdop audiowide-regular">perdop</span>
+                <span id="bladeProjetos" class="bladeProjetos iceland-regular"></span>
             </span>
         </div>
     </header>
     <main>
         <section class="projects">
-            <h1 class="iceland-regular">PROJETOS</h1>
+            <h1 id="projectsTittle" class="iceland-regular"></h1>
             <span class="projectsRow">
-                <section class="projectsContainer">
+                <section class="projectsContainer EcoExplora">
                     <div class="projectImgLayout">
                         <img src="img/EcoExplora.png" alt="">
                     </div>
@@ -45,7 +49,7 @@
                         <div class="languageTag"><img src="img/tags/json.png" alt=""><p>Json</p></div>
                     </div>
                     <h2 class="iceland-regular">EcoExplora</h2>
-                    <p class="iceland-regular projectTxt">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed in metus facilisis, lacinia ante sed, accumsan justo. Quisque placerat tellus quis tortor blandit condimentum.</p>
+                    <p id="ecoexploraTxt" class="iceland-regular projectTxt">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed in metus facilisis, lacinia ante sed, accumsan justo. Quisque placerat tellus quis tortor blandit condimentum.</p>
                 </section>
                 <section class="projectsContainer">
                     <div class="projectImgLayout">
@@ -65,7 +69,36 @@
             </span>
         </section>
 
-        <section class="about"></section>
+        <section class="about">
+            <span class="tribalImg"></span>
+            <span class="tribalBg"></span>
+            <span class="aboutRow">
+                <div class="aboutTxt">
+                    <span style="display: flex;">
+                        <h1 id="aboutTittle" class="iceland-regular"></h1>
+                        <span class="aboutH1Line"></span>
+                    </h1> 
+                    </span>
+
+                    <p id="aboutTxt1" class="iceland-regular">Olá, sou Pedro, uso o nome Perdop nas redes sociais. </p>
+                    <p id="aboutTxt2" class="iceland-regular">Comecei a estudar programação no Ensino Médio, formando-me em um curso técnico de desenvolvimento de software. </p>
+                    <p id="aboutTxt3" class="iceland-regular">Desde o início, gostei de programar, e me interessei especialmente por responsividade e cross-plataforma enquento aprendia desenvolvimento web, algo que valorizo ainda em qualquer linguagem.</p>
+                </div>
+                <div class="aboutImg">
+                    <span class="aboutImgImg" alt="">
+                </div>
+            </span>
+            <span class="aboutRow2">
+                <div class="aboutLinks">
+                    <span class="aboutLinksRow iceland-regular"><a href="">Github:</a><a href="">perdop</a></span>
+                    <span class="aboutLinksRow iceland-regular"><a href="">Instagram:</a><a href="">perdope</a></span>
+                    <span class="aboutLinksRow iceland-regular"><a href="">Linkedin:</a><a href="">pedro951</a></span>
+                    <span class="aboutLinksRow iceland-regular"><a href="">Youtube:</a><a href="">Perdop</a></span>
+                    <span class="aboutLinksRow iceland-regular"><a href="">Tiktok:</a><a href="">Perdop</a></span>
+                </div>
+                <p id="aboutTxt4" class="iceland-regular">Depois disso, quis me aprofundar mais na área. Explorei diversas possibilidades no front-end e back-end, me identificando mais com este último. Atualmente, trabalho como freelancer e desenvolvo projetos pessoais, que posto atualizações nas midias e adiciono ao meu portfólio conforme o desenvolvimento.</p>
+            </span>
+        </section>
     </main>
 </body>
 </html>
