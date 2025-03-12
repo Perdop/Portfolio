@@ -8,8 +8,22 @@
     <title>Portfolio</title>
 </head>
 <input type="checkbox" name="" id="darkModeCheck" style="display: none;">
+<input type="checkbox" name="" id="menuBarCheck" style="display: none;">
 <body>
-    <header>
+    <div id="toolbarNav">
+        <span>
+            <button id="menuBarTool"></button>
+        </span>
+        <nav>
+            <a href="#headerFocus" class="iceland-regular">Home</a>
+            <a href="#projectsFocus" class="iceland-regular">Projetos</a>
+            <a href="#aboutFocus" class="iceland-regular">Sobre mim</a>
+            <a href="#" class="iceland-regular">Curriculum</a>
+            <a href="#" class="iceland-regular">Resume</a>
+            <a href="#" class="iceland-regular">Rede sociais</a>
+        </nav>
+    </div>
+    <header id="headerFocus">
         <nav>
             <a href="http://github.com/Perdop" id="githubLink"></a>
             <button id="language" class="iceland-regular">EN</button>
@@ -33,7 +47,7 @@
         </div>
     </header>
     <main>
-        <section class="projects">
+        <section id="projectsFocus" class="projects">
             <h1 id="projectsTittle" class="iceland-regular"></h1>
             <span class="projectsRow">
                 <section class="projectsContainer EcoExplora">
@@ -69,7 +83,7 @@
             </span>
         </section>
 
-        <section class="about">
+        <section id="aboutFocus" class="about">
             <span class="tribalImg"></span>
             <span class="tribalBg"></span>
             <span class="aboutRow">

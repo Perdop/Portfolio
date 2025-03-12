@@ -12,6 +12,9 @@
 }
   
   
+html {
+    scroll-behavior: smooth;
+}
 
 *{
     padding: 0;
@@ -33,17 +36,17 @@ header{
     z-index: 10;
 }
 
-nav{
+header nav{
     padding: 4cqmin;
     height: 6vh;
     display: flex;
     align-items: center;
 }
-nav button:hover{
+header nav button:hover{
     filter: invert(100%);
     scale: 120%;
 }
-nav a:hover{
+header nav a:hover{
     filter: invert(100%);
     scale: 120%;
 }
@@ -426,6 +429,76 @@ main{
 #darkModeCheck:checked ~ header .bladeProjetos{
     color: black;
 }
+#darkModeCheck:checked ~ #toolbarNav #menuBarTool{
+    filter: invert(100%);
+}
+#darkModeCheck:checked ~ #toolbarNav #menuBarTool:hover{
+    filter: invert(0);
+    scale: 120%;
+}
+
+
+/* Toolbar */
+#toolbarNav{
+    transform: translateX(500px);
+    right: 0;
+    z-index: 3;
+    position: fixed;
+    padding-left: 4cqmin;
+    border-radius: 15px;
+    height: 100vh;
+    bottom: 0;
+    overflow: hidden;
+    background: linear-gradient(123deg, rgb(197, 0, 3) 0%, rgba(139,15,17,1) 100%);
+    display: flex;
+    flex-direction: column;
+}
+#toolbarNav span{
+    padding: 4cqmin 2cqmin 0 0;
+    display: flex;
+    align-items: center;
+    justify-content:end;
+    height: 6vh;
+}
+#menuBarTool{
+    background: url(img/menu.png);
+    aspect-ratio: 1/1;
+    background-position: top;
+    background-size: 100%;
+    border: 0;
+    height: 110%;
+}
+#toolbarNav nav{
+    height: 70%;
+    display: flex;
+    align-items: end;
+    flex-direction: column;
+    justify-content: space-around;
+    font-size: clamp(35px, 3vw, 50px);
+    color: white;
+    margin-right: 5cqmin;
+}
+#toolbarNav a{
+    text-decoration: none;
+    color: white;
+}
+#toolbarNav a:hover{
+    text-shadow: 0 0 20px rgb(255, 255, 255);
+    scale: 70%;
+}
+#menuBarTool:hover{
+    filter: invert(100%);
+    scale: 120%;
+}
+
+#menuBarCheck:checked ~ #toolbarNav{
+    display: flex;
+    transform: translateX(0px);
+    transition: 0.3s;
+}
+
+
+
 @media(max-width:300px){
     .headerShortCuts{
         flex-direction: column;

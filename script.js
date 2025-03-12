@@ -57,3 +57,14 @@ lightMode.addEventListener("click", () => {
     checkbox.checked = !checkbox.checked; // Alterna o estado do checkbox
 });
 
+// Toolbar
+const checkboxTool = document.getElementById("menuBarCheck");
+const Toolbar = document.getElementById("menuBar");
+const Toolbar2 = document.getElementById("menuBarTool");
+Toolbar.addEventListener("click", () => {
+    checkboxTool.checked = !checkboxTool.checked; // Alterna o estado do checkbox
+});
+Toolbar2.addEventListener("click", () => {
+    checkboxTool.checked = !checkboxTool.checked; // Alterna o estado do checkbox
+});
+
