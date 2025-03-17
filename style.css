@@ -239,8 +239,17 @@ main{
     text-align: center;
     margin-top: 5px;
 }
-.EcoExplora h2:hover{
+.projectsContainer a{
+    text-decoration: none;
+    color: white;
+}
+.projectsContainer h2:hover{
     scale: 105%;
+}
+.projectsContainer a:hover{
+    scale: 105%;
+}
+.EcoExplora a:hover{
     color: #2c4766;
     text-shadow: 0 0 20px rgb(255, 255, 255);
 }
