@@ -1,0 +1,266 @@
+@import url('https://fonts.googleapis.com/css2?family=Amiko:wght@400;600;700&family=Londrina+Solid:wght@100;300;400;900&display=swap');
+
+.londrina-solid-regular {
+    font-family: "Londrina Solid", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+.amiko-semibold {
+    font-family: "Amiko", sans-serif;
+    font-weight: 600;
+    font-style: normal;
+}
+
+*{
+    padding: 0;
+    margin: 0;
+} 
+
+/* ScrollBar */
+::-webkit-scrollbar {
+    width: 5px; /* Largura da scrollbar */
+    height: 5px; /* Altura da scrollbar para barras horizontais */
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: #1B485F; /* Cor do "thumb" da scrollbar */
+    border-radius: 6px; /* Borda arredondada */
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background-color: #2d617a; 
+}
+
+::-webkit-scrollbar-track {
+    background: #00000021; /* Cor de fundo da barra de rolagem */
+}
+
+body{
+    background-color: #8EBD9D;
+}
+
+header{
+    height: 90px;
+}
+header .clouds{
+    display: flex;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    justify-content: center;
+}
+.invisibleCloud{
+    letter-spacing: 3px;
+    /* font-size: clamp(15px, 7cqmin, 80px); */
+    font-size: 60px;
+    color: #ffffff00;
+    margin: 0 50px;
+}
+header .clouds .cloud{
+    background-color: #7F9543;
+    z-index: 0;
+    flex-shrink: 0;
+    position: relative;
+    width: 100%;
+    height: 70px;
+    -webkit-box-shadow: 0px 0px 0px 8px rgba(0, 0, 0, 0.250);
+    -moz-box-shadow: 0px 0px 0px 8px rgba(0, 0, 0, 0.250);
+    box-shadow: 0px 0px 0px 8px rgba(0, 0, 0, 0.250);
+}
+header .clouds #cloud1{
+    border-radius: 0 0 300px 0;
+}
+header .clouds #cloud2{
+    border-radius: 0 0 0 300px;
+}
+header h1{
+    position: absolute;
+    text-align: center;
+    width: 100%;
+    color: #1B485F;
+    z-index: 1;
+    letter-spacing: 3px;
+    top: 1vh;
+    font-size: 60px;
+}
+
+main{
+    display: flex;
+    flex-direction: column;
+}
+main .row{
+    display: flex;
+    flex-wrap:wrap;
+    margin-bottom: 10vh;
+    justify-content: center;
+}
+main .row .imgLogo{
+    height: 70cqmin;
+    aspect-ratio: 1/1;
+    display: flex;
+    margin-top: 30px;
+}
+main .row .imgLogo img{
+    height: 100%;
+    aspect-ratio: 1/1;
+}
+main .row .objTexTxt {
+    margin-top: 30px;
+    flex-grow: 1; /* Permite que ocupe o espaço restante */
+    flex-basis: 0; /* Inicia com zero, permitindo que cresça */
+    min-width: 45vw;
+    overflow-wrap: break-word; /* Garante a quebra de palavras longas */
+}
+main .row .objTexTxt h2 {
+    margin-left: 6cqmin;
+    color: #1B485F;
+    letter-spacing: 2px;
+    font-size: 43px;
+    overflow-wrap: break-word; /* Garante a quebra de palavras longas */
+    text-wrap: nowrap;
+}
+main .row .objTexTxt p {
+    padding-left: 6cqmin;
+    letter-spacing: 1px;
+    margin-top: 10px;
+    margin-left: 20px;
+    margin-right: 3cqmin;
+    font-size: 22px;
+    text-indent: 15px;
+    color: #1B485F;
+    overflow-wrap: break-word; /* Garante a quebra de palavras longas */
+}
+main .row .objTexTxt .blueBg{
+    background-color: #1B485F;
+    margin-top: 30px;
+    margin-left: 3cqmin;
+    margin-right: 3cqmin;
+    color: white ;
+    display: block;
+    padding: 3cqmin;
+    border-radius: 10px;
+}
+main .row .objTexTxt .blueBg p, main .row .objTexTxt .blueBg h2{
+    color: white ;
+    margin-right: 0;
+    padding-left: 0;
+    margin-left: 0;
+}
+main .row .objTexTxt .blueBg p{ 
+    margin-left: 20px;
+    margin-bottom: 1cqmin;
+}
+main .row2{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-bottom: 30px;
+}
+main .row2 .funcionalidades{    
+    margin: 0 30px;
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1; /* Permite que ocupe o espaço restante */
+    flex-basis: 0; /* Inicia com zero, permitindo que cresça */
+}
+main .row2 .funcionalidades h2{
+    color: #1B485F;
+    letter-spacing: 3px;
+    font-size: 45px;
+}
+main .row2 .funcionalidades p{
+    margin-top: 15px;
+    color: #1B485F;
+    font-size: 23px;
+    min-width: 300px;
+    overflow-wrap: break-word; /* Garante a quebra de palavras longas */
+    margin-bottom: 10px;
+}
+main .row2 .testAppMobile{
+    margin:0 30px;
+    margin-bottom: 30px;
+    display: flex;
+    justify-content: center;
+}
+main .row2 .testAppMobile .phoneBorder{
+    height: 70vh;
+    border-radius: 40px;
+    background-color: black;
+    aspect-ratio: 9/16;
+    padding: 1.5cqmin;
+    text-decoration: none;
+}
+main .row2 .testAppMobile .phoneBorder:hover{
+    scale: 105%;
+    background-color:#7f9543b0 ;
+}
+.phoneBorder:hover h2 {
+    color: rgb(0, 0, 0) !important; 
+}
+main .row2 .testAppMobile .phoneBorder .phoneScreen{
+    background-color: #C5C5C5;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    border-radius: 30px;
+    height: 92%;
+    
+}
+main .row2 .testAppMobile .phoneBorder .phoneScreen h2{
+    color: #1B485F;
+    font-size: 5vw;
+    width: 70%;
+    text-align: center;
+}
+main .row2 .downDesenTxt{
+    display: flex;
+    margin: 0 30px;
+    flex-direction: column;
+    flex-grow: 1; /* Permite que ocupe o espaço restante */
+    flex-basis: 0; /* Inicia com zero, permitindo que cresça */
+}
+main .row2 .downDesenTxt h2{
+    color: #1B485F;
+    letter-spacing: 3px;
+    font-size: 45px;
+    min-width: z;
+    margin-bottom: 15px;
+    overflow-wrap:normal; /* Garante a quebra de palavras longas */
+}
+main .row2 .downDesenTxt a{
+    min-width: 300px;
+    margin-bottom: 5px;
+    color: #1B485F;
+    font-size: 25px;
+    overflow-wrap: break-word; /* Garante a quebra de palavras longas */
+    text-decoration: none;
+}
+main .row2 .downDesenTxt a:hover{
+    scale: 105%;
+    text-shadow: 0 0 20px #ffffff;
+}
+main .expo{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 90%;
+    background-color: #1B485F;
+    border-radius: 10px;
+    margin-bottom: 10vh;
+    align-self: center;
+}
+main .expo h1{
+    color: white;
+    letter-spacing: 5px;
+    font-size: 45px;
+    margin-bottom: 10px;
+}
+main .expo .expoVid{
+    width: 70%;
+    aspect-ratio: 16/9;
+    background-color: black;
+    margin-bottom: 5vh;
+    border-radius: 20px;
+}

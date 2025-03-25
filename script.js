@@ -1,5 +1,7 @@
-var en = false;
+const estadoSalvoEn = localStorage.getItem("en");
 
+var en = false;
+en = estadoSalvoEn === "true";
 const language = document.getElementById("language");
 const pedroResumo = document.getElementById("pedroResumo");
 const pedroAbout = document.getElementById("about");
@@ -32,6 +34,7 @@ function updateLanguage(){
         aboutTxt2.innerHTML = "Comecei a estudar programação no Ensino Médio, formando-me em um curso técnico de desenvolvimento de software.";
         aboutTxt3.innerHTML = "Desde o início, gostei de programar, e me interessei especialmente por responsividade e cross-plataforma enquento aprendia desenvolvimento web, algo que valorizo ainda em qualquer linguagem.";
         aboutTxt4.innerHTML = "Depois disso, quis me aprofundar mais na área. Explorei diversas possibilidades no front-end e back-end, me identificando mais com este último. Atualmente, trabalho como freelancer e desenvolvo projetos pessoais, que posto atualizações nas midias e adiciono ao meu portfólio conforme o desenvolvimento.";
+        
     } else if (en){
         en = false;
         
@@ -68,3 +71,35 @@ Toolbar2.addEventListener("click", () => {
     checkboxTool.checked = !checkboxTool.checked; // Alterna o estado do checkbox
 });
 
+// Local Storage
+    // Theme
+document.addEventListener("DOMContentLoaded", function () {
+    // Obtém o estado salvo no LocalStorage
+    const estadoSalvo = localStorage.getItem("darkModeEstado");
+
+    // Define o estado inicial da checkbox
+    checkbox.checked = (estadoSalvo === "true");
+
+});
+lightMode.addEventListener("click", () => {
+    localStorage.setItem("darkModeEstado", checkbox.checked);
+    console.log("Estado salvo ao clicar no botão:", checkbox.checked);
+});
+
+
+   // Language
+   const enCheck = document.getElementById("enCheck")
+document.addEventListener("DOMContentLoaded", function () {
+
+    // Obtém o estado salvo no LocalStorage
+    const estadoSalvoEn = localStorage.getItem("en");
+
+    // Define o estado inicial da checkbox
+    enCheck.checked = (estadoSalvoEn === "true");
+
+});
+language.addEventListener("click", () => {
+    enCheck.checked = !enCheck.checked;
+    localStorage.setItem("en", enCheck.checked);
+    console.log("sim", enCheck.checked);
+});

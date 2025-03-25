@@ -19,8 +19,29 @@ html {
 *{
     padding: 0;
     margin: 0;
-    transition: 0.3s;
+    transition: 0.25s;
 }
+
+/* ScrollBar */
+::-webkit-scrollbar {
+    width: 5px; /* Largura da scrollbar */
+    height: 5px; /* Altura da scrollbar para barras horizontais */
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: rgba(241, 26, 30, 0.781); /* Cor do "thumb" da scrollbar */
+    border-radius: 6px; /* Borda arredondada */
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background-color: rgb(241, 26, 30); 
+}
+
+::-webkit-scrollbar-track {
+    background: #000000c0; /* Cor de fundo da barra de rolagem */
+}
+
+
 
 body{
     overflow-x: hidden;
@@ -30,7 +51,7 @@ header{
     background: rgb(241,26,30);
     background: linear-gradient(123deg, rgba(241,26,30,1) 0%, rgba(139,15,17,1) 100%);
     width: 100vw;
-    height: 100vh;
+    min-height: 100vh;
     display: flex;
     flex-direction: column;
     z-index: 10;
@@ -142,16 +163,16 @@ header h2{
 }
 .bladeLine{
     background-color: black;
-    height: 2px;
+    height: 0.2vw;
     width: 100%;
     position:absolute;
     z-index: 0;
-    bottom: 0;
+    margin-top: 6.55%;
 }
 .bladePerdop{
     position:absolute;
     z-index: 2;
-    bottom: 3.3vw;
+    margin-top: 2%;
     left: 2vw;
     font-size: 1.2vw;
 }
@@ -159,7 +180,7 @@ header h2{
     color: white;
     position:absolute;
     z-index: 2;
-    bottom: 0.7vw;
+    margin-top: 4.5%;
     left: 2vw;
     font-size: 1.5vw;
 }
@@ -206,6 +227,9 @@ main{
 .projectImgLayout img{
     width: 100%;
 }
+.projectImgLayout a{
+    width: 100%;
+}
 .projectsTags{
     margin-top: 20px;
     width: 100%;
@@ -244,14 +268,11 @@ main{
     color: white;
 }
 .projectsContainer h2:hover{
-    scale: 105%;
-}
-.projectsContainer a:hover{
-    scale: 105%;
+    scale: 110%;
+    text-shadow: 0 0 20px rgb(255, 255, 255);
 }
 .EcoExplora a:hover{
     color: #2c4766;
-    text-shadow: 0 0 20px rgb(255, 255, 255);
 }
 .projectTxt{
     color: white;
@@ -383,15 +404,16 @@ main{
 #darkModeCheck:checked ~ main .projects h1{
     color: black;
 }
-#darkModeCheck:checked ~ main .EcoExplora h2:hover{
-    scale: 105%;
+#darkModeCheck:checked ~ main .EcoExplora a:hover{
     color: #2c4766;
+}
+#darkModeCheck:checked ~ main .projectsContainer a:hover{
     text-shadow: 0 0 20px rgb(0, 0, 0);
 }
 #darkModeCheck:checked ~ main .projects p{
     color: black;
 }
-#darkModeCheck:checked ~ main .projects h2{
+#darkModeCheck:checked ~ main .projects a{
     color: black;
 }
 #darkModeCheck:checked ~ main .languageTag{
