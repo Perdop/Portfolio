@@ -163,7 +163,7 @@ header h2{
 }
 .bladeLine{
     background-color: black;
-    height: 0.2vw;
+    height: 0.15vw;
     width: 100%;
     position:absolute;
     z-index: 0;
