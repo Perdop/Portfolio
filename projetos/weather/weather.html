@@ -1,38 +1,74 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="../../img/Weather.png" type="image/x-icon">
     <link rel="stylesheet" href="weather.css">
-    <title>Weather</title>
+    <title>Weather App</title>
 </head>
+
 <body>
+    <header>
+        <h1 class="winky-sans-600">WEATHER</h1>
+        <div class="clouds">
+            <span class="cloud" id="cloud1"></span>
+            <span class="invisibleCloud winky-sans-600">ECOEXPLORA</span>
+            <span class="cloud" id="cloud2"></span>
+        </div>
+    </header>
     <main>
-        <nav>
-            <input placeholder="Digite sua cidade.." type="text" id="searchBox">
-            <button id="searchBtn">Search</button>
-        </nav>
-        <section class="shortData">
-            <h1><i></i></h1>
-            <span><h2></h2> <p>°</p></span>
-            <h3><i></i></h3>
-        </section>
-        <section class="longData">
-            <span class="borderLongData">
-                <div class="weather">
-                    <h2></h2>
-                </div>
-                <div class="minTemp">
-                    <h1><i>minimum</i></h1>
-                    <h2>-</h2>
-                </div>
-                <div class="maxTemp">
-                    <h1><i>maximum</i></h1>
-                    <h2>-</h2>
-                </div>
-            </span>
-        </section>
+        <span class="row">
+            <div class="imgLogo">
+                <img src="../../img/Weather.png" alt="">
+            </div>
+            <div class="objTexTxt">
+                <h2 class="winky-sans-600">Objetivo</h2>
+                <p class="gidole-regular">O Ecoexplora monitora animais extintos no Rio Grande do Sul e educa os
+                    usuários sobre a biodiversidade local. O app fornece informações detalhadas sobre cada espécie,
+                    ajudando na conscientização ambiental e na preservação da fauna.</p>
+                <span class="blueBg">
+                    <h2 class="winky-sans-600">Tecnologias</h2>
+                    <p class="gidole-regular">No back-end, emprega Spring Boot e MySQL, garantindo uma API eficiente e
+                        escalável, hospedada na Render. O front-end é desenvolvido no Android Studio, utilizando Java
+                        para uma experiência nativa e otimizada.</p>
+                </span>
+            </div>
+        </span>
+        <span class="row2">
+            <div class="funcionalidades">
+                <h2 class="winky-sans-600">Funcionalidades</h2>
+                <p class="gidole-regular">O Ecoexplora oferece diversas funcionalidades para explorar e monitorar
+                    animais extintos e ameaçados no Rio Grande do Sul. Os usuários podem acessar um catálogo de espécies
+                    com informações detalhadas, imagens e status de conservação. Além disso, o app permite o registro de
+                    avistamentos, contribuindo para a atualização de dados e a conscientização ambiental.</p>
+            </div>
+            <div class="testAppMobile">
+                <a href="https://appetize.io/app/b_pq44jjzlwxh3ezqoe4bwygia4a" target="_blank" rel="noopener noreferrer"
+                    class="phoneBorder">
+                    <span class="phoneScreen">
+                        <h2 class="winky-sans-600">Testar App</h2>
+                    </span>
+                </a>
+            </div>
+            <div class="downDesenTxt">
+                <h2 class="winky-sans-600">Download</h2>
+                <a href="https://github.com/Perdop/EcoExplora" target="_blank" class="gidole-regular">• Github</a>
+                <a href="" class="gidole-regular">• MediaFire</a>
+                <h2 class="winky-sans-600">Desenvolvimento</h2>
+                <a href="" class="gidole-regular">• Youtube</a>
+                <a href="" class="gidole-regular">• Linkedin</a>
+                <a href="" class="gidole-regular">• Instagram</a>
+                <a href="" class="gidole-regular">• Tiktok</a>
+            </div>
+        </span>
+        <span class="expo">
+            <h1 class="winky-sans-600">Exposição</h1>
+            <div class="expoVid"></div>
+        </span>
     </main>
+    <nav></nav>
 </body>
-<script src="weather.js"></script>
+
 </html>
