@@ -93,7 +93,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
     // Obtém o estado salvo no LocalStorage
     const estadoSalvoEn = localStorage.getItem("en");
-
+ 
     // Define o estado inicial da checkbox
     enCheck.checked = (estadoSalvoEn === "true");
 

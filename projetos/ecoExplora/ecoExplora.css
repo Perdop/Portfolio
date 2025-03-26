@@ -39,8 +39,48 @@ body{
     background-color: #8EBD9D;
 }
 
+.languageLayout{
+    display: flex;
+    position: fixed;
+    width: 100vw;
+    z-index: 1;
+    color: #FAD564;
+    justify-content: space-between;
+    align-items: end;
+    bottom: 0;
+}
+.languageLayout button, .languageLayout h1{
+    font-size:clamp(15px, 7cqmin, 80px);
+    color: #FAD564;
+    background: none;
+    border: none;
+    letter-spacing: 5px;
+    margin-right: 2vw;
+    margin-left: 2vw;
+    margin-bottom: 1vh;
+    text-shadow: 
+    2px 0 0 black,   /* Direita */
+    -2px 0 0 black,  /* Esquerda */
+    0 2px 0 black,   /* Abaixo */
+    0 -2px 0 black,  /* Acima */
+    2px 2px 0 black, /* Diagonal inferior direita */
+    -2px -2px 0 black, /* Diagonal superior esquerda */
+    2px -2px 0 black, /* Diagonal superior direita */
+    -2px 2px 0 black; /* Diagonal inferior esquerda */;
+}
+.languageLayout h1:hover{
+    scale: 120%;
+    opacity: 80%;
+}
+.languageLayout a{
+    text-decoration: none;
+    color: #FAD564;
+}
+
 header{
-    height: 90px;
+    height: 19cqmin;
+    display: flex;
+    justify-content: center;
 }
 header .clouds{
     display: flex;
@@ -50,7 +90,7 @@ header .clouds{
     justify-content: center;
 }
 .invisibleCloud{
-    letter-spacing: 3px;
+    letter-spacing: 1.5cqmin;
     /* font-size: clamp(15px, 7cqmin, 80px); */
     font-size: 60px;
     color: #ffffff00;
@@ -75,11 +115,9 @@ header .clouds #cloud2{
 }
 header h1{
     position: absolute;
-    text-align: center;
-    width: 100%;
     color: #1B485F;
     z-index: 1;
-    letter-spacing: 3px;
+    letter-spacing: 1.5cqmin;
     top: 1vh;
     font-size: 60px;
 }
@@ -114,14 +152,14 @@ main .row .objTexTxt {
 main .row .objTexTxt h2 {
     margin-left: 6cqmin;
     color: #1B485F;
-    letter-spacing: 2px;
+    letter-spacing: 0.9cqmin  ;
     font-size: 43px;
     overflow-wrap: break-word; /* Garante a quebra de palavras longas */
     text-wrap: nowrap;
 }
 main .row .objTexTxt p {
     padding-left: 6cqmin;
-    letter-spacing: 1px;
+    letter-spacing: 0.3cqmin;
     margin-top: 10px;
     margin-left: 20px;
     margin-right: 3cqmin;
@@ -138,7 +176,7 @@ main .row .objTexTxt .blueBg{
     color: white ;
     display: block;
     padding: 3cqmin;
-    border-radius: 10px;
+    border-radius: 3cqmin;
 }
 main .row .objTexTxt .blueBg p, main .row .objTexTxt .blueBg h2{
     color: white ;
@@ -166,14 +204,14 @@ main .row2 .funcionalidades{
 }
 main .row2 .funcionalidades h2{
     color: #1B485F;
-    letter-spacing: 3px;
+    letter-spacing: 0.9cqmin  ;
     font-size: 45px;
 }
 main .row2 .funcionalidades p{
     margin-top: 15px;
     color: #1B485F;
     font-size: 23px;
-    min-width: 300px;
+    min-width: 30vw;
     overflow-wrap: break-word; /* Garante a quebra de palavras longas */
     margin-bottom: 10px;
 }
@@ -184,8 +222,8 @@ main .row2 .testAppMobile{
     justify-content: center;
 }
 main .row2 .testAppMobile .phoneBorder{
-    height: 70vh;
-    border-radius: 40px;
+    height: 75vh;
+    border-radius:10cqmin;
     background-color: black;
     aspect-ratio: 9/16;
     padding: 1.5cqmin;
@@ -194,8 +232,10 @@ main .row2 .testAppMobile .phoneBorder{
 main .row2 .testAppMobile .phoneBorder:hover{
     scale: 105%;
     background-color:#7f9543b0 ;
+    transition: 0.3s;
 }
 .phoneBorder:hover h2 {
+    transition: 0.3s;
     color: rgb(0, 0, 0) !important; 
 }
 main .row2 .testAppMobile .phoneBorder .phoneScreen{
@@ -204,7 +244,7 @@ main .row2 .testAppMobile .phoneBorder .phoneScreen{
     align-items: center;
     justify-content: center;
     width: 100%;
-    border-radius: 30px;
+    border-radius:10cqmin;
     height: 92%;
     
 }
@@ -223,14 +263,13 @@ main .row2 .downDesenTxt{
 }
 main .row2 .downDesenTxt h2{
     color: #1B485F;
-    letter-spacing: 3px;
+    letter-spacing: 0.9cqmin  ;
     font-size: 45px;
-    min-width: z;
     margin-bottom: 15px;
     overflow-wrap:normal; /* Garante a quebra de palavras longas */
 }
 main .row2 .downDesenTxt a{
-    min-width: 300px;
+    min-width: 30vw;
     margin-bottom: 5px;
     color: #1B485F;
     font-size: 25px;
@@ -239,6 +278,7 @@ main .row2 .downDesenTxt a{
 }
 main .row2 .downDesenTxt a:hover{
     scale: 105%;
+    transition: 0.3s;
     text-shadow: 0 0 20px #ffffff;
 }
 main .expo{
@@ -253,7 +293,7 @@ main .expo{
 }
 main .expo h1{
     color: white;
-    letter-spacing: 5px;
+    letter-spacing: 1cqmin;
     font-size: 45px;
     margin-bottom: 10px;
 }
@@ -262,5 +302,44 @@ main .expo .expoVid{
     aspect-ratio: 16/9;
     background-color: black;
     margin-bottom: 5vh;
-    border-radius: 20px;
+    border-radius: 7cqmax;
+}
+
+@media (max-width:350px){
+    header h1{
+        font-size: 14cqmin;
+    }
+    main .row .imgLogo{
+        margin-top: 0;
+    }
+    main .row .objTexTxt h2 {
+        font-size: 10cqmin;
+    }
+    main .row .objTexTxt p {
+        font-size: 6cqmin ;
+        padding-left: 0;
+    }
+    main .row .objTexTxt .blueBg p {
+        margin-left: 0;
+    }
+    main .row2 .funcionalidades h2{
+        font-size: 10cqmin;
+    }
+    main .row2 .funcionalidades p {
+        font-size: 6cqmin ;
+    }
+    main .row2 .downDesenTxt h2 {
+        font-size: 10cqmin;
+    }
+    main .row2 .downDesenTxt a {
+        font-size: 6cqmin ;
+    }
+    main .expo h1{
+        font-size: 10cqmin;
+    }
+    main .row2 .testAppMobile .phoneBorder {
+        height: min-content;
+        width: 80vw;
+        aspect-ratio: 9/16;
+    }
 }

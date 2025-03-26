@@ -1,21 +1,25 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="../../img/Weather.png" type="image/x-icon">
     <link rel="stylesheet" href="weather.css">
-    <title>Weather App</title>
+    <script src="weather.js" defer></script>
+    <title>Weather</title>
 </head>
-
 <body>
+    <input type="checkbox" name="" id="enCheck" style="display: none;">   
+    <span class="languageLayout">
+        <h1 id="homeBtn" class="winky-sans-600"><a href="../../index.html"><-</a></h1>
+        <h1 class="winky-sans-600"><button id="languageBtn"  class="winky-sans-600">BR</button></h1>
+    </span>
     <header>
-        <h1 class="winky-sans-600">WEATHER</h1>
+        <h1 class="winky-sans-600">Weather</h1>
         <div class="clouds">
             <span class="cloud" id="cloud1"></span>
             <span class="invisibleCloud winky-sans-600">ECOEXPLORA</span>
-            <span class="cloud" id="cloud2"></span>
+            <span class="cloud" id="cloud2" ></span>
         </div>
     </header>
     <main>
@@ -24,39 +28,30 @@
                 <img src="../../img/Weather.png" alt="">
             </div>
             <div class="objTexTxt">
-                <h2 class="winky-sans-600">Objetivo</h2>
-                <p class="gidole-regular">O Ecoexplora monitora animais extintos no Rio Grande do Sul e educa os
-                    usuários sobre a biodiversidade local. O app fornece informações detalhadas sobre cada espécie,
-                    ajudando na conscientização ambiental e na preservação da fauna.</p>
+                <h2 id="objTit" class="winky-sans-600">Objetivo</h2>
+                <p id="objTxt" class="gidole-regular">O Ecoexplora monitora animais extintos no Rio Grande do Sul e educa os usuários sobre a biodiversidade local. O app fornece informações detalhadas sobre cada espécie, ajudando na conscientização ambiental e na preservação da fauna.</p>
                 <span class="blueBg">
-                    <h2 class="winky-sans-600">Tecnologias</h2>
-                    <p class="gidole-regular">No back-end, emprega Spring Boot e MySQL, garantindo uma API eficiente e
-                        escalável, hospedada na Render. O front-end é desenvolvido no Android Studio, utilizando Java
-                        para uma experiência nativa e otimizada.</p>
+                    <h2 id="tecTit" class="winky-sans-600">Tecnologias</h2>
+                    <p id="tecTxt" class="gidole-regular">No back-end, emprega Spring Boot e MySQL, garantindo uma API eficiente e escalável, hospedada na Render. O front-end é desenvolvido  no Android Studio, utilizando Java para uma experiência nativa e otimizada.</p>
                 </span>
             </div>
         </span>
         <span class="row2">
             <div class="funcionalidades">
-                <h2 class="winky-sans-600">Funcionalidades</h2>
-                <p class="gidole-regular">O Ecoexplora oferece diversas funcionalidades para explorar e monitorar
-                    animais extintos e ameaçados no Rio Grande do Sul. Os usuários podem acessar um catálogo de espécies
-                    com informações detalhadas, imagens e status de conservação. Além disso, o app permite o registro de
-                    avistamentos, contribuindo para a atualização de dados e a conscientização ambiental.</p>
+                <h2 id="funcTit" class="winky-sans-600">Funcionalidades</h2>
+                <p id="funcTxt" class="gidole-regular">O Ecoexplora oferece diversas funcionalidades para explorar e monitorar animais extintos e ameaçados no Rio Grande do Sul. Os usuários podem acessar um catálogo de espécies com informações detalhadas, imagens e status de conservação. Além disso, o app permite o registro de avistamentos, contribuindo para a atualização de dados e a conscientização ambiental.</p>
             </div>
             <div class="testAppMobile">
-                <a href="https://appetize.io/app/b_pq44jjzlwxh3ezqoe4bwygia4a" target="_blank" rel="noopener noreferrer"
-                    class="phoneBorder">
+                <a href="" target="_blank" rel="noopener noreferrer" class="phoneBorder">
                     <span class="phoneScreen">
-                        <h2 class="winky-sans-600">Testar App</h2>
+                        <h2 id="testApp" class="winky-sans-600">Testar App</h2>
                     </span>
                 </a>
             </div>
             <div class="downDesenTxt">
-                <h2 class="winky-sans-600">Download</h2>
+                <h2 class="winky-sans-600">Downloads</h2>
                 <a href="https://github.com/Perdop/EcoExplora" target="_blank" class="gidole-regular">• Github</a>
-                <a href="" class="gidole-regular">• MediaFire</a>
-                <h2 class="winky-sans-600">Desenvolvimento</h2>
+                <h2 id="devTit" class="winky-sans-600">Desenvolvimento</h2>
                 <a href="" class="gidole-regular">• Youtube</a>
                 <a href="" class="gidole-regular">• Linkedin</a>
                 <a href="" class="gidole-regular">• Instagram</a>
@@ -64,11 +59,10 @@
             </div>
         </span>
         <span class="expo">
-            <h1 class="winky-sans-600">Exposição</h1>
+            <h1 id="expo" class="winky-sans-600">Exposição</h1>
             <div class="expoVid"></div>
         </span>
     </main>
     <nav></nav>
 </body>
-
 </html>
