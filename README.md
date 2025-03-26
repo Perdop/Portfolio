@@ -16,7 +16,7 @@ Este portfólio foi criado para apresentar meus trabalhos e demonstrar minhas co
 🔹 [EcoExplora](#) - Aplicativo para monitoramento de animais extintos do Rio Grande do Sul 🌿
 
 ## 🚀 Como Acessar
-Você pode acessar meu portfólio online através do link: **[meuportfolio.com](#)**
+Você pode acessar meu portfólio online através do link: **https://perdop.github.io/Portfolio/index.html(#)**
 
 ## 📞 Contato
 📧 **Email:** operdop@proton.me  
