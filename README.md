@@ -28,7 +28,9 @@ Você pode acessar meu portfólio online através do link: **https://perdop.gith
 
 ## 📞 Contato
 📧 **Email:** operdop@proton.me  
+
 💼 **LinkedIn:** https://www.linkedin.com/in/pedro951/
+
 🐙 **GitHub:** https://github.com/perdop
 
 Fique à vontade para explorar e entrar em contato! 😃
