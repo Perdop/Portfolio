@@ -18,7 +18,9 @@ https://perdop.github.io/Portfolio/
 
 ## 📌 Projetos Destacados
 🔹 [EcoExplora](#) - Aplicativo para monitoramento de animais extintos do Rio Grande do Sul 🌿
+
 🔹 [Weather](#) - Aplicativo para visualização de condições climáticas 🌧️
+
 🔹 [Trash Walker](#) - Jogo inspirado no dinossauro do google 🗑️
 
 ## 🚀 Como Acessar
