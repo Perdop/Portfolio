@@ -5,15 +5,21 @@ Bem-vindo ao meu portfólio! Aqui você encontrará alguns dos projetos que dese
 ## 🌐 Sobre o Portfólio
 Este portfólio foi criado para apresentar meus trabalhos e demonstrar minhas competências em desenvolvimento de software, tanto no **front-end** quanto no **back-end**.
 
+## Site
+https://perdop.github.io/Portfolio/
+
 ## 🛠️ Tecnologias Utilizadas
 - **HTML5, CSS3 e JavaScript**
 - **MySQL** 
 - **Android Studio** 
 - **Spring Boot**
 - **Java**
+- **Json**
 
 ## 📌 Projetos Destacados
 🔹 [EcoExplora](#) - Aplicativo para monitoramento de animais extintos do Rio Grande do Sul 🌿
+🔹 [Weather](#) - Aplicativo para visualização de condições climáticas 🌧️
+🔹 [Trash Walker](#) - Jogo inspirado no dinossauro do google 🗑️
 
 ## 🚀 Como Acessar
 Você pode acessar meu portfólio online através do link: **https://perdop.github.io/Portfolio/index.html**
