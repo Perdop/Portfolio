@@ -236,6 +236,7 @@ main{
 }
 .languageTag{
     background-color: #D9D9D9;
+    min-height:16px;
     border-radius: 1cqmin;
     height: 1.3vw;
     padding: 1cqmin;
