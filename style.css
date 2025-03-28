@@ -236,6 +236,7 @@ main{
 }
 .languageTag{
     background-color: #D9D9D9;
+    min-height:16px;
     border-radius: 1cqmin;
     height: 1.3vw;
     padding: 1cqmin;
@@ -538,6 +539,7 @@ main{
     .projectsContainer{
         width: 80%;
         margin: auto;
+        margin-top: 20px;
     }
     .headerShortCuts{
         flex-direction: column;
@@ -566,6 +568,8 @@ main{
         margin-bottom: 20px;
         padding-bottom: 8px;
     }
+    .tribalImg{
+    background-position: center;
 }
 
 /* Projects Settings */
