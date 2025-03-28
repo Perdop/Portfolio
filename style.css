@@ -529,11 +529,15 @@ main{
 }
 
 @media(max-width:500px){
+    #projectsTittle{
+        margin-bottom: 10px;
+    }
     .projectsRow{
         flex-direction: column;
     }
     .projectsContainer{
         width: 80%;
+        margin: auto;
     }
     .headerShortCuts{
         flex-direction: column;
