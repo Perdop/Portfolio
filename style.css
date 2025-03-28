@@ -224,7 +224,9 @@ main{
     width: 100%;
 }
 .projectImgLayout a{
-    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 .projectsTags{
     margin-top: 20px;
@@ -570,6 +572,7 @@ main{
     }
     .tribalImg{
     background-position: center;
+    }
 }
 
 /* Projects Settings */
@@ -604,5 +607,28 @@ main{
     color: rgb(132, 167, 175);
 }
 #darkModeCheck:checked ~main .Weather a:hover{
-    text-shadow: 0 0 20px rgb(255, 255, 255) !important; 
+    text-shadow: 0 0 20px rgba(0, 0, 0, 0.747) !important; 
+}
+.TrashWalker .projectImgLayout{
+    background: url(projetos/trashWalker/img/ceuu.png);
+    background-size: 100%;
+}
+.TrashWalker .projectImgLayout img{
+    width: 80%;
+}
+.TrashWalker .projectImgLayout:hover{   
+    outline: solid 2px  #3fba0f;
+    border: solid 1px #3fba0f;
+}
+.TrashWalker a:hover{
+    color: #3fba0f;
+}
+.TrashWalker .languageTag:hover{
+    outline: solid 3px #3fba0f;
+}
+#darkModeCheck:checked ~ main .TrashWalker  a:hover{
+    color: #3fba0f;
+}
+#darkModeCheck:checked ~main .TrashWalker a:hover{
+    text-shadow: 0 0 20px rgba(0, 0, 0, 0.747) !important; 
 }
