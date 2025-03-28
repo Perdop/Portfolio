@@ -539,6 +539,7 @@ main{
     .projectsContainer{
         width: 80%;
         margin: auto;
+        margin-top: 20px;
     }
     .headerShortCuts{
         flex-direction: column;
