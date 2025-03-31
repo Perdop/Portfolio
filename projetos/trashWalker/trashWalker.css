@@ -13,9 +13,10 @@
 }
 
 :root {
-    --cor-principal: #2471E3; /* Azul */
-    --cor-secundaria: #3fba0fb9; /* Verde */
-    --cor-txt1: black;
+    --cor-principal: #2d7aec; /* Azul */
+    --cor-secundaria: #61cc36; /* Verde */
+    --cor-txt1: #f3f3f3;
+    --cor-txt2: black;
 }
 
 *{
@@ -30,13 +31,10 @@
 }
 
 ::-webkit-scrollbar-thumb {
-    background-color: rgb(255, 255, 255); /* Cor do "thumb" da scrollbar */
+    background-color: var(--cor-secundaria); /* Cor do "thumb" da scrollbar */
     border-radius: 6px; /* Borda arredondada */
 }
 
-::-webkit-scrollbar-thumb:hover {
-    background-color: rgb(87, 163, 180); 
-}
 
 ::-webkit-scrollbar-track {
     background: #00000021; /* Cor de fundo da barra de rolagem */
@@ -159,7 +157,7 @@ main .row .objTexTxt {
 }
 main .row .objTexTxt h2 {
     margin-left: 6cqmin;
-    color: #f3f3f3;
+    color: var(--cor-txt1);
     letter-spacing: 0.9cqmin  ;
     font-size: 43px;
     overflow-wrap: break-word; /* Garante a quebra de palavras longas */
@@ -173,7 +171,7 @@ main .row .objTexTxt p {
     margin-right: 3cqmin;
     font-size: 22px;
     text-indent: 15px;
-    color: #f3f3f3;
+    color: var(--cor-txt1);
     overflow-wrap: break-word; /* Garante a quebra de palavras longas */
 }
 main .row .objTexTxt .blueBg{
@@ -186,7 +184,7 @@ main .row .objTexTxt .blueBg{
     border-radius: 3cqmin;
 }
 main .row .objTexTxt .blueBg p, main .row .objTexTxt .blueBg h2{
-    color: rgb(32, 32, 32) ;
+    color: var(--cor-txt2) ;
     margin-right: 0;
     padding-left: 0;
     margin-left: 0;
@@ -210,13 +208,13 @@ main .row2 .funcionalidades{
     flex-basis: 0; /* Inicia com zero, permitindo que cresça */
 }
 main .row2 .funcionalidades h2{
-    color: #f3f3f3;
+    color:  var(--cor-txt1);
     letter-spacing: 0.9cqmin  ;
     font-size: 45px;
 }
 main .row2 .funcionalidades p{
     margin-top: 15px;
-    color: #f3f3f3;
+    color: var(--cor-txt1);
     font-size: 23px;
     min-width: 30vw;
     overflow-wrap: break-word; /* Garante a quebra de palavras longas */
@@ -238,11 +236,11 @@ main .row2 .testAppMobile .phoneBorder{
 }
 main .row2 .testAppMobile .phoneBorder:hover{
     scale: 105%;
-    background-color:#f5f5f5 ;
+    background-color:var(--cor-txt1) ;
     transition: 0.3s;
 }
 .phoneBorder:hover h2 {
-    color: rgb(132, 167, 175) !important; 
+    color: var(--cor-principal) !important; 
     transition: 0.3s;
 }
 main .row2 .testAppMobile .phoneBorder .phoneScreen{
@@ -256,7 +254,7 @@ main .row2 .testAppMobile .phoneBorder .phoneScreen{
     
 }
 main .row2 .testAppMobile .phoneBorder .phoneScreen h2{
-    color: #000000;
+    color: black;
     font-size: 5vw;
     width: 70%;
     text-align: center;
@@ -269,7 +267,7 @@ main .row2 .downDesenTxt{
     flex-basis: 0; /* Inicia com zero, permitindo que cresça */
 }
 main .row2 .downDesenTxt h2{
-    color: #f3f3f3;
+    color: var(--cor-txt1);
     letter-spacing: 0.9cqmin  ;
     font-size: 45px;
     margin-bottom: 15px;
@@ -278,7 +276,7 @@ main .row2 .downDesenTxt h2{
 main .row2 .downDesenTxt a{
     min-width: 30vw;
     margin-bottom: 5px;
-    color: #f3f3f3;
+    color: var(--cor-txt1);
     font-size: 25px;
     overflow-wrap: break-word; /* Garante a quebra de palavras longas */
     text-decoration: none;
@@ -299,7 +297,7 @@ main .expo{
     align-self: center;
 }
 main .expo h1{
-    color: rgb(32, 32, 32) ;
+    color: var(--cor-txt2);
     letter-spacing: 1cqmin;
     font-size: 45px;
     margin-bottom: 10px;
