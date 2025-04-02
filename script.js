@@ -13,6 +13,10 @@ const aboutTxt1 = document.getElementById("aboutTxt1");
 const aboutTxt2 = document.getElementById("aboutTxt2");
 const aboutTxt3 = document.getElementById("aboutTxt3");
 const aboutTxt4 = document.getElementById("aboutTxt4");
+const menuProjetos = document.getElementById("menuProjetos");
+const menuSobreMim = document.getElementById("menuSobreMim");
+const menuSociais = document.getElementById("menuSociais");
+
 
 updateLanguage()
 language.addEventListener("click", updateLanguage);
@@ -28,6 +32,9 @@ function updateLanguage(){
         pedroAbout.innerHTML = "-> Sobre mim";
         bladeProjetos.innerHTML = "Projetos";
         projectsTittle.innerHTML = "Projetos";
+        menuProjetos.innerHTML = "Projetos";
+        menuSobreMim.innerHTML = "Sobre mim";
+        menuSociais.innerHTML = "Redes Sociais";
         ecoexploraTxt.innerHTML = "O Ecoexplora é um aplicativo que monitora animais extintos do Rio Grande do Sul, oferecendo informações sobre cada espécie e promovendo a conservação ambiental.";
         aboutTittle.innerHTML = "Sobre mim";
         aboutTxt1.innerHTML = "Olá, sou Pedro, uso o nome Perdop nas redes sociais.";
@@ -43,8 +50,11 @@ function updateLanguage(){
         pedroAbout.innerHTML = "-> About me";
         bladeProjetos.innerHTML = "Projects";
         projectsTittle.innerHTML = "Projects";
+        menuProjetos.innerHTML = "Projects";
+        menuSobreMim.innerHTML = "About me";
+        menuSociais.innerHTML = "Social Media";
         ecoexploraTxt.innerHTML = "Ecoexplora is an application that monitors extinct animals from Rio Grande do Sul, providing information about each species and promoting environmental conservation.";
-        aboutTittle.innerHTML = "Sobre mim";
+        aboutTittle.innerHTML = "About me";
         aboutTxt1.innerHTML = "Hello, I am Pedro, I use the name Perdop on social media.";
         aboutTxt2.innerHTML = "I started studying programming in high school, completing a technical course in software development.";
         aboutTxt3.innerHTML = "From the beginning, I have enjoyed programming, with a particular interest in responsiveness and cross-platform development as I learned web development, something I still value in any language";
