@@ -614,7 +614,7 @@ main{
     background-size: 100%;
 }
 .TrashWalker .projectImgLayout img{
-    width: 80%;
+    width: 60%;
 }
 .TrashWalker .projectImgLayout:hover{   
     outline: solid 2px  #3fba0f;
