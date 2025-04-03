@@ -7,7 +7,6 @@ const pedroResumo = document.getElementById("pedroResumo");
 const pedroAbout = document.getElementById("about");
 const bladeProjetos = document.getElementById("bladeProjetos");
 const projectsTittle = document.getElementById("projectsTittle");
-const ecoexploraTxt = document.getElementById("ecoexploraTxt");
 const aboutTittle = document.getElementById("aboutTittle");
 const aboutTxt1 = document.getElementById("aboutTxt1");
 const aboutTxt2 = document.getElementById("aboutTxt2");
@@ -17,6 +16,9 @@ const menuProjetos = document.getElementById("menuProjetos");
 const menuSobreMim = document.getElementById("menuSobreMim");
 const menuSociais = document.getElementById("menuSociais");
 
+const ecoexploraTxt = document.getElementById("ecoexploraTxt");
+const weatherTxt = document.getElementById("weatherTxt");
+const trashWalkerTxt = document.getElementById("trashWalkerTxt");
 
 updateLanguage()
 language.addEventListener("click", updateLanguage);
@@ -35,13 +37,16 @@ function updateLanguage(){
         menuProjetos.innerHTML = "Projetos";
         menuSobreMim.innerHTML = "Sobre mim";
         menuSociais.innerHTML = "Redes Sociais";
-        ecoexploraTxt.innerHTML = "O Ecoexplora é um aplicativo que monitora animais extintos do Rio Grande do Sul, oferecendo informações sobre cada espécie e promovendo a conservação ambiental.";
         aboutTittle.innerHTML = "Sobre mim";
         aboutTxt1.innerHTML = "Olá, sou Pedro, uso o nome Perdop nas redes sociais.";
         aboutTxt2.innerHTML = "Comecei a estudar programação no Ensino Médio, formando-me em um curso técnico de desenvolvimento de software.";
         aboutTxt3.innerHTML = "Desde o início, gostei de programar, e me interessei especialmente por responsividade e cross-plataforma enquento aprendia desenvolvimento web, algo que valorizo ainda em qualquer linguagem.";
         aboutTxt4.innerHTML = "Depois disso, quis me aprofundar mais na área. Explorei diversas possibilidades no front-end e back-end, me identificando mais com este último. Atualmente, trabalho como freelancer e desenvolvo projetos pessoais, que posto atualizações nas midias e adiciono ao meu portfólio conforme o desenvolvimento.";
         
+        ecoexploraTxt.innerHTML = "O Ecoexplora é um aplicativo que monitora animais extintos do Rio Grande do Sul, oferecendo informações sobre cada espécie e promovendo a conservação ambiental.";
+        weatherTxt.innerHTML = "Weather exibe a previsão do tempo em tempo real usando a API da OpenWeather. Basta digitar uma cidade para ver a temperatura e condições climáticas.";
+        trashWalkerTxt.innerHTML = "Trash Walker é um jogo de corrida infinita onde o jogador desvia de obstáculos e coleta pontos. Além da diversão, ele conscientiza sobre sustentabilidade, destacando os impactos do lixo no meio ambiente e incentivando hábitos ecológicos.";
+
     } else if (en){
         en = false;
         
@@ -53,12 +58,15 @@ function updateLanguage(){
         menuProjetos.innerHTML = "Projects";
         menuSobreMim.innerHTML = "About me";
         menuSociais.innerHTML = "Social Media";
-        ecoexploraTxt.innerHTML = "Ecoexplora is an application that monitors extinct animals from Rio Grande do Sul, providing information about each species and promoting environmental conservation.";
         aboutTittle.innerHTML = "About me";
         aboutTxt1.innerHTML = "Hello, I am Pedro, I use the name Perdop on social media.";
         aboutTxt2.innerHTML = "I started studying programming in high school, completing a technical course in software development.";
         aboutTxt3.innerHTML = "From the beginning, I have enjoyed programming, with a particular interest in responsiveness and cross-platform development as I learned web development, something I still value in any language";
         aboutTxt4.innerHTML = "After that, I wanted to delve deeper into the field. I explored various possibilities in both front-end and back-end development, identifying more with the latter. Currently, I work as a freelancer and develop personal projects, sharing updates on social media and adding them to my portfolio as they progress.";
+        
+        ecoexploraTxt.innerHTML = "Ecoexplora is an application that monitors extinct animals from Rio Grande do Sul, providing information about each species and promoting environmental conservation.";
+        weatherTxt.innerHTML = "Weather displays real-time weather forecasts using the OpenWeather API. Just enter a city to see the temperature and weather conditions.";
+        trashWalkerTxt.innerHTML = "Trash Walker is an endless runner game where the player dodges obstacles and collects points. Beyond the fun, it raises awareness about sustainability, highlighting the impact of waste on the environment and encouraging eco-friendly habits.";
     }
 }
 
