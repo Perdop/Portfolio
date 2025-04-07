@@ -15,6 +15,10 @@ const aboutTxt4 = document.getElementById("aboutTxt4");
 const menuProjetos = document.getElementById("menuProjetos");
 const menuSobreMim = document.getElementById("menuSobreMim");
 const menuSociais = document.getElementById("menuSociais");
+const menuCurriculum = document.getElementById("menuCurriculum");
+const menuResume = document.getElementById("menuResume");
+const curriculum = document.getElementById("curriculum");
+
 
 const ecoexploraTxt = document.getElementById("ecoexploraTxt");
 const weatherTxt = document.getElementById("weatherTxt");
@@ -37,6 +41,9 @@ function updateLanguage(){
         menuProjetos.innerHTML = "Projetos";
         menuSobreMim.innerHTML = "Sobre mim";
         menuSociais.innerHTML = "Redes Sociais";
+        menuCurriculum.href = "https://perdop.my.canva.site/curriculum-br";
+        curriculum.href = "https://perdop.my.canva.site/curriculum-br";
+        menuResume.href = "https://perdop.my.canva.site/resume-br";
         aboutTittle.innerHTML = "Sobre mim";
         aboutTxt1.innerHTML = "Olá, sou Pedro, uso o nome Perdop nas redes sociais.";
         aboutTxt2.innerHTML = "Comecei a estudar programação no Ensino Médio, formando-me em um curso técnico de desenvolvimento de software.";
@@ -58,6 +65,9 @@ function updateLanguage(){
         menuProjetos.innerHTML = "Projects";
         menuSobreMim.innerHTML = "About me";
         menuSociais.innerHTML = "Social Media";
+        menuCurriculum.href = "https://perdop.my.canva.site/curriculum-en";
+        curriculum.href = "https://perdop.my.canva.site/curriculum-en";
+        menuResume.href = "https://perdop.my.canva.site/resume-en";
         aboutTittle.innerHTML = "About me";
         aboutTxt1.innerHTML = "Hello, I am Pedro, I use the name Perdop on social media.";
         aboutTxt2.innerHTML = "I started studying programming in high school, completing a technical course in software development.";
@@ -80,7 +90,7 @@ lightMode.addEventListener("click", () => {
 
 // Toolbar
 const checkboxTool = document.getElementById("menuBarCheck");
-const Toolbar = document.getElementById("menuBar");
+const Toolbar = document.getElementById("menuBarFix");
 const Toolbar2 = document.getElementById("menuBarTool");
 Toolbar.addEventListener("click", () => {
     checkboxTool.checked = !checkboxTool.checked; // Alterna o estado do checkbox

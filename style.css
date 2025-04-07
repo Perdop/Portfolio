@@ -96,12 +96,21 @@ header nav a:hover{
 }
 #menuBar{
     margin-left: 3vh;
-    background: url(img/menu.png);
+    background: rgba(180, 138, 138, 0);
     height: 110%;
+    aspect-ratio: 1/1;
+    border: 0;
+}
+#menuBarFix{
+    background: url(img/menu.png);
     aspect-ratio: 1/1;
     background-position: center;
     background-size: 100%;
     border: 0;
+    top: 3.6cqmin;
+    right: 3.2cqmin;
+    height: 6.6vh;
+    position: fixed;
 }
 header h1{
     color: white;
