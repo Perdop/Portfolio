@@ -270,6 +270,7 @@ main{
 .projectsContainer a{
     text-decoration: none;
     color: white;
+    width:100%;
 }
 .projectsContainer h2:hover{
     scale: 110%;
