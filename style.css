@@ -557,6 +557,7 @@ main{
     }
     .headerShortCuts{
         flex-direction: column;
+        max-width:100vw;
     }
     .about{
         height: max-content;
