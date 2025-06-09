@@ -18,6 +18,7 @@ const menuSociais = document.getElementById("menuSociais");
 const menuCurriculum = document.getElementById("menuCurriculum");
 const menuResume = document.getElementById("menuResume");
 const curriculum = document.getElementById("curriculum");
+const resume = document.getElementById("resume");
 
 
 const ecoexploraTxt = document.getElementById("ecoexploraTxt");
@@ -43,6 +44,7 @@ function updateLanguage(){
         menuSociais.innerHTML = "Redes Sociais";
         menuCurriculum.href = "https://perdop.my.canva.site/curriculum-br";
         curriculum.href = "https://perdop.my.canva.site/curriculum-br";
+        resume.href = "https://perdop.my.canva.site/resume-br";
         menuResume.href = "https://perdop.my.canva.site/resume-br";
         aboutTittle.innerHTML = "Sobre mim";
         aboutTxt1.innerHTML = "Olá, sou Pedro, uso o nome Perdop nas redes sociais.";
@@ -67,6 +69,7 @@ function updateLanguage(){
         menuSociais.innerHTML = "Social Media";
         menuCurriculum.href = "https://perdop.my.canva.site/curriculum-en";
         curriculum.href = "https://perdop.my.canva.site/curriculum-en";
+        resume.href = "https://perdop.my.canva.site/resume-en";
         menuResume.href = "https://perdop.my.canva.site/resume-en";
         aboutTittle.innerHTML = "About me";
         aboutTxt1.innerHTML = "Hello, I am Pedro, I use the name Perdop on social media.";
