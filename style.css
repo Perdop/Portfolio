@@ -136,7 +136,7 @@ header h2{
     align-items: center;
     flex-wrap: wrap;
     row-gap: 2vw;
-    column-gaop:4vw;
+    column-gap:4vw;
 }
 .headerShortCuts a{
     text-decoration: none;
