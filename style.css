@@ -128,13 +128,15 @@ header h2{
     font-size: clamp(30px, 4cqmin, 40px);
 }
 .headerShortCuts{
+    max-width:60cqmin;
     margin: 0 auto;
     margin-top: 5vh;
     display: flex;
     justify-content: space-between;
     align-items: center;
     flex-wrap: wrap;
-    gap: 4vw;
+    row-gap: 2vw;
+    column-gaop:4vw;
 }
 .headerShortCuts a{
     text-decoration: none;
