@@ -132,7 +132,7 @@ header h2{
     margin: 0 auto;
     margin-top: 5vh;
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
     flex-wrap: wrap;
     row-gap: 2vw;
