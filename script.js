@@ -35,51 +35,43 @@ function updateLanguage(){
         en = true
 
         language.innerHTML = "EN";
-        pedroResumo.innerHTML = "Sou um desenvolvedor de software com conhecimentos nas áreas de front-end e back-end.";
+        pedroResumo.innerHTML = "Desenvolvedor de Software | Spring Boot | Java | NestJs | TypeScript | React | Android Studio";
         pedroAbout.innerHTML = "-> Sobre mim";
         bladeProjetos.innerHTML = "Projetos";
         projectsTittle.innerHTML = "Projetos";
         menuProjetos.innerHTML = "Projetos";
         menuSobreMim.innerHTML = "Sobre mim";
         menuSociais.innerHTML = "Redes Sociais";
-        menuCurriculum.href = "https://perdop.my.canva.site/curriculum-br";
-        curriculum.href = "https://perdop.my.canva.site/curriculum-br";
-        resume.href = "https://perdop.my.canva.site/resume-br";
-        menuResume.href = "https://perdop.my.canva.site/resume-br";
+        menuCurriculum.href = "https://1drv.ms/w/c/9ceb11e4fd63c48a/IQDgvH9UUmKoS6V2Tc2ooCkJAYv_sWtRYkT7VGPghu-rDlY?e=dPfWhb";
+        curriculum.href = "https://1drv.ms/w/c/9ceb11e4fd63c48a/IQDgvH9UUmKoS6V2Tc2ooCkJAYv_sWtRYkT7VGPghu-rDlY?e=dPfWhb";
         aboutTittle.innerHTML = "Sobre mim";
-        aboutTxt1.innerHTML = "Olá, sou Pedro, uso o nome Perdop nas redes sociais.";
-        aboutTxt2.innerHTML = "Comecei a estudar programação no Ensino Médio, formando-me em um curso técnico de desenvolvimento de software.";
-        aboutTxt3.innerHTML = "Desde o início, gostei de programar, e me interessei especialmente por responsividade e cross-plataforma enquento aprendia desenvolvimento web, algo que valorizo ainda em qualquer linguagem.";
-        aboutTxt4.innerHTML = "Depois disso, quis me aprofundar mais na área. Explorei diversas possibilidades no front-end e back-end, me identificando mais com este último. Atualmente, trabalho como freelancer e desenvolvo projetos pessoais, que posto atualizações nas midias e adiciono ao meu portfólio conforme o desenvolvimento.";
-        
-        ecoexploraTxt.innerHTML = "O Ecoexplora é um aplicativo que monitora animais extintos do Rio Grande do Sul, oferecendo informações sobre cada espécie e promovendo a conservação ambiental.";
-        weatherTxt.innerHTML = "Weather exibe a previsão do tempo em tempo real usando a API da OpenWeather. Basta digitar uma cidade para ver a temperatura e condições climáticas.";
-        trashWalkerTxt.innerHTML = "Trash Walker é um jogo de corrida infinita onde o jogador desvia de obstáculos e coleta pontos. Além da diversão, ele conscientiza sobre sustentabilidade, destacando os impactos do lixo no meio ambiente e incentivando hábitos ecológicos.";
+        aboutTxt1.innerHTML = "";
+        aboutTxt2.innerHTML = "";
+        aboutTxt3.innerHTML = "Desenvolvedor de software com formação técnica em Sistemas para Internet e experiência profissional em ambientes críticos de TI. Atuo na construção de aplicações e sistemas utilizando Java, Spring Boot, TypeScript, NestJS, bancos de dados e APIs REST, aliando organização, responsabilidade e trabalho em equipe a uma postura autodidata e participativa em projetos, eventos e bootcamps.";
+        aboutTxt4.innerHTML = "Gosto de programar, criar projetos e estudar novas tecnologias no tempo livre, pois vejo a tecnologia como uma forma de transformar ideias em soluções reais. Acredito em disciplina, constância e evolução contínua, valores que aplico tanto na vida pessoal quanto no meu crescimento como desenvolvedor.";
 
     } else if (en){
         en = false;
         
         language.innerHTML = "BR";
-        pedroResumo.innerHTML = "I am a software developer with knowledge in front-end and back-end areas.";
+        pedroResumo.innerHTML = "Software Developer | Spring Boot | Java | NestJs | TypeScript | React | Android Studio";
         pedroAbout.innerHTML = "-> About me";
         bladeProjetos.innerHTML = "Projects";
         projectsTittle.innerHTML = "Projects";
         menuProjetos.innerHTML = "Projects";
         menuSobreMim.innerHTML = "About me";
         menuSociais.innerHTML = "Social Media";
-        menuCurriculum.href = "https://perdop.my.canva.site/curriculum-en";
-        curriculum.href = "https://perdop.my.canva.site/curriculum-en";
-        resume.href = "https://perdop.my.canva.site/resume-en";
-        menuResume.href = "https://perdop.my.canva.site/resume-en";
+        menuCurriculum.href = "https://1drv.ms/w/c/9ceb11e4fd63c48a/IQAUWuk5See9T6w7EmI7B8GWAQ6Z_EUWSzJqvN2s2GQmD1Q?e=fLYSJo";
+        curriculum.href = "https://1drv.ms/w/c/9ceb11e4fd63c48a/IQAUWuk5See9T6w7EmI7B8GWAQ6Z_EUWSzJqvN2s2GQmD1Q?e=fLYSJo";
         aboutTittle.innerHTML = "About me";
-        aboutTxt1.innerHTML = "Hello, I am Pedro, I use the name Perdop on social media.";
-        aboutTxt2.innerHTML = "I started studying programming in high school, completing a technical course in software development.";
-        aboutTxt3.innerHTML = "From the beginning, I have enjoyed programming, with a particular interest in responsiveness and cross-platform development as I learned web development, something I still value in any language";
-        aboutTxt4.innerHTML = "After that, I wanted to delve deeper into the field. I explored various possibilities in both front-end and back-end development, identifying more with the latter. Currently, I work as a freelancer and develop personal projects, sharing updates on social media and adding them to my portfolio as they progress.";
+        aboutTxt1.innerHTML = "";
+        aboutTxt2.innerHTML = "";
+        aboutTxt3.innerHTML = "Software developer with a technical degree in Internet Systems and professional experience in mission-critical IT environments. I work on building applications and systems using Java, Spring Boot, TypeScript, NestJS, databases, and REST APIs, combining organization, responsibility, and teamwork with a self-taught mindset and active participation in projects, events, and bootcamps.";
+        aboutTxt4.innerHTML = "I enjoy programming, building projects, and studying new technologies in my free time, as I see technology as a way to turn ideas into real solutions. I believe in discipline, consistency, and continuous growth—values that I apply both in my personal life and in my development as a software developer.";
         
         ecoexploraTxt.innerHTML = "Ecoexplora is an application that monitors extinct animals from Rio Grande do Sul, providing information about each species and promoting environmental conservation.";
-        weatherTxt.innerHTML = "Weather displays real-time weather forecasts using the OpenWeather API. Just enter a city to see the temperature and weather conditions.";
-        trashWalkerTxt.innerHTML = "Trash Walker is an endless runner game where the player dodges obstacles and collects points. Beyond the fun, it raises awareness about sustainability, highlighting the impact of waste on the environment and encouraging eco-friendly habits.";
+        weatherTxt.innerHTML = "Created to simplify the management of students and scholarships, enabling clear control of student status, quick identification of scholarship holders, and a simple, intuitive, and efficient experience for those who manage the information.";
+        trashWalkerTxt.innerHTML = "A ride-sharing app that offers more autonomy and safety, with gender-based matching and respected preferences, ensuring comfort and trust on every trip.";
     }
 }
 

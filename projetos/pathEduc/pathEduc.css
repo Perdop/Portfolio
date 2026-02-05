@@ -1,0 +1,350 @@
+@import url('https://fonts.googleapis.com/css2?family=Gidole&family=Winky+Sans:ital,wght@0,300..900;1,300..900&display=swap');
+.gidole-regular {
+    font-family: "Gidole", sans-serif;
+    font-weight: 550;
+    font-style: normal;
+}
+
+.winky-sans-600 {
+    font-family: "Winky Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 600;
+    font-style: normal;
+}
+
+:root {
+    --cor-principal: #1e4e80; /* Azul */
+    --cor-secundaria: #c9a227; /* Verde */
+    --cor-txt1: #ffffff;
+    --cor-txt2: black;
+}
+
+*{
+    padding: 0;
+    margin: 0;
+} 
+
+/* ScrollBar */
+::-webkit-scrollbar {
+    width: 5px; /* Largura da scrollbar */
+    height: 5px; /* Altura da scrollbar para barras horizontais */
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: var(--cor-secundaria); /* Cor do "thumb" da scrollbar */
+    border-radius: 6px; /* Borda arredondada */
+}
+
+
+::-webkit-scrollbar-track {
+    background: #00000021; /* Cor de fundo da barra de rolagem */
+}
+
+body{
+    background-color: var(--cor-principal);
+}
+
+.languageLayout{
+    display: flex;
+    position: fixed;
+    width: 100vw;
+    z-index: 1;
+    justify-content: space-between;
+    align-items: end;
+    bottom: 0;
+}
+.languageLayout button, .languageLayout h1{
+    font-size:clamp(15px, 7cqmin, 80px);
+    color: var(--cor-txt1);
+    background: none;
+    border: none;
+    letter-spacing: 5px;
+    margin-right: 2vw;
+    margin-left: 2vw;
+    margin-bottom: 1vh;
+    text-shadow: 
+    2px 0 0 black,   /* Direita */
+    -2px 0 0 black,  /* Esquerda */
+    0 2px 0 black,   /* Abaixo */
+    0 -2px 0 black,  /* Acima */
+    2px 2px 0 black, /* Diagonal inferior direita */
+    -2px -2px 0 black, /* Diagonal superior esquerda */
+    2px -2px 0 black, /* Diagonal superior direita */
+    -2px 2px 0 black; /* Diagonal inferior esquerda */;
+}
+.languageLayout h1:hover{
+    scale: 120%;
+    opacity: 80%;
+}
+.languageLayout a{
+    text-decoration: none;
+    color: var(--cor-txt1);
+}
+
+
+header{
+    height: 19cqmin;
+    display: flex;
+    justify-content: center;
+}
+header .clouds{
+    display: flex;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    justify-content: center;
+}
+.invisibleCloud{
+    letter-spacing: 1.5cqmin;
+    /* font-size: clamp(15px, 7cqmin, 80px); */
+    font-size: 60px;
+    color: #ffffff00;
+    margin: 0 50px;
+}
+header .clouds .cloud{
+    background-color: var(--cor-secundaria);
+    z-index: 0;
+    flex-shrink: 0;
+    position: relative;
+    width: 100%;
+    height: 70px;
+    -webkit-box-shadow: 0px 0px 0px 8px rgba(0, 0, 0, 0.250);
+    -moz-box-shadow: 0px 0px 0px 8px rgba(0, 0, 0, 0.250);
+    box-shadow: 0px 0px 0px 8px rgba(0, 0, 0, 0.250);
+}
+header .clouds #cloud1{
+    border-radius: 0 0 300px 0;
+}
+header .clouds #cloud2{
+    border-radius: 0 0 0 300px;
+}
+header h1{
+    position: absolute;
+    text-align: center;
+    color: var(--cor-txt1);
+    z-index: 1;
+    letter-spacing: 1.5cqmin;
+    top: 1vh;
+    font-size: 60px;
+}
+
+main{
+    display: flex;
+    flex-direction: column;
+}
+main .row{
+    display: flex;
+    flex-wrap:wrap;
+    margin-bottom: 10vh;
+    justify-content: center;
+}
+main .row .imgLogo{
+    height: 70cqmin;
+    aspect-ratio: 1/1;
+    display: flex;
+    margin-top: 30px;
+}
+main .row .imgLogo img{
+    height: 100%;
+    aspect-ratio: 1/1;
+}
+main .row .objTexTxt {
+    margin-top: 30px;
+    flex-grow: 1; /* Permite que ocupe o espaço restante */
+    flex-basis: 0; /* Inicia com zero, permitindo que cresça */
+    min-width: 45vw;
+    overflow-wrap: break-word; /* Garante a quebra de palavras longas */
+}
+main .row .objTexTxt h2 {
+    margin-left: 6cqmin;
+    color: var(--cor-txt1);
+    letter-spacing: 0.9cqmin  ;
+    font-size: 43px;
+    overflow-wrap: break-word; /* Garante a quebra de palavras longas */
+    text-wrap: nowrap;
+}
+main .row .objTexTxt p {
+    padding-left: 6cqmin;
+    letter-spacing: 0.3cqmin;
+    margin-top: 10px;
+    margin-left: 20px;
+    margin-right: 3cqmin;
+    font-size: 22px;
+    text-indent: 15px;
+    color: var(--cor-txt1);
+    overflow-wrap: break-word; /* Garante a quebra de palavras longas */
+}
+main .row .objTexTxt .blueBg{
+    background-color: var(--cor-secundaria);
+    margin-top: 30px;
+    margin-left: 3cqmin;
+    margin-right: 3cqmin;
+    display: block;
+    padding: 3cqmin;
+    border-radius: 3cqmin;
+}
+main .row .objTexTxt .blueBg p, main .row .objTexTxt .blueBg h2{
+    color: var(--cor-txt2) ;
+    margin-right: 0;
+    padding-left: 0;
+    margin-left: 0;
+}
+main .row .objTexTxt .blueBg p{ 
+    margin-left: 20px;
+    margin-bottom: 1cqmin;
+}
+main .row2{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-bottom: 30px;
+}
+main .row2 .funcionalidades{    
+    margin: 0 30px;
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1; /* Permite que ocupe o espaço restante */
+    flex-basis: 0; /* Inicia com zero, permitindo que cresça */
+}
+main .row2 .funcionalidades h2{
+    color:  var(--cor-txt1);
+    letter-spacing: 0.9cqmin  ;
+    font-size: 45px;
+}
+main .row2 .funcionalidades p{
+    margin-top: 15px;
+    color: var(--cor-txt1);
+    font-size: 23px;
+    min-width: 30vw;
+    overflow-wrap: break-word; /* Garante a quebra de palavras longas */
+    margin-bottom: 10px;
+}
+main .row2 .testAppMobile{
+    margin:0 30px;
+    margin-bottom: 30px;
+    display: flex;
+    justify-content: center;
+}
+main .row2 .testAppMobile .phoneBorder{
+    height: 70vh;
+    border-radius:10cqmin;
+    background-color: black;
+    aspect-ratio: 9/16;
+    padding: 1.5cqmin;
+    text-decoration: none;
+}
+main .row2 .testAppMobile .phoneBorder:hover{
+    scale: 105%;
+    background-color:var(--cor-txt1) ;
+    transition: 0.3s;
+}
+.phoneBorder:hover h2 {
+    color: var(--cor-principal) !important; 
+    transition: 0.3s;
+}
+main .row2 .testAppMobile .phoneBorder .phoneScreen{
+    background-color: #d8d8d8;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    border-radius:10cqmin;
+    height: 92%;
+    
+}
+main .row2 .testAppMobile .phoneBorder .phoneScreen h2{
+    color: black;
+    font-size: 5vw;
+    width: 70%;
+    text-align: center;
+}
+main .row2 .downDesenTxt{
+    display: flex;
+    margin: 0 30px;
+    flex-direction: column;
+    flex-grow: 1; /* Permite que ocupe o espaço restante */
+    flex-basis: 0; /* Inicia com zero, permitindo que cresça */
+}
+main .row2 .downDesenTxt h2{
+    color: var(--cor-txt1);
+    letter-spacing: 0.9cqmin  ;
+    font-size: 45px;
+    margin-bottom: 15px;
+    overflow-wrap:normal; /* Garante a quebra de palavras longas */
+}
+main .row2 .downDesenTxt a{
+    min-width: 30vw;
+    margin-bottom: 5px;
+    color: var(--cor-txt1);
+    font-size: 25px;
+    overflow-wrap: break-word; /* Garante a quebra de palavras longas */
+    text-decoration: none;
+}
+main .row2 .downDesenTxt a:hover{
+    scale: 105%;
+    text-shadow: 0 0 20px #ffffff;
+    transition: 0.3s;
+}
+main .expo{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 90%;
+    background-color: var(--cor-secundaria);
+    border-radius: 10px;
+    margin-bottom: 10vh;
+    align-self: center;
+}
+main .expo h1{
+    color: var(--cor-txt2);
+    letter-spacing: 1cqmin;
+    font-size: 45px;
+    margin-bottom: 10px;
+}
+main .expo .expoVid{
+    width: 70%;
+    aspect-ratio: 16/9;
+    background-color: black;
+    margin-bottom: 5vh;
+    border-radius: 20px;
+}
+
+@media (max-width:404px){
+    header h1{
+        font-size: 14cqmin;
+    }
+    main .row .imgLogo{
+        margin-top: 0;
+    }
+    main .row .objTexTxt h2 {
+        font-size: 10cqmin;
+    }
+    main .row .objTexTxt p {
+        font-size: 6cqmin ;
+        padding-left: 0;
+    }
+    main .row .objTexTxt .blueBg p {
+        margin-left: 0;
+    }
+    main .row2 .funcionalidades h2{
+        font-size: 10cqmin;
+    }
+    main .row2 .funcionalidades p {
+        font-size: 6cqmin ;
+    }
+    main .row2 .downDesenTxt h2 {
+        font-size: 10cqmin;
+    }
+    main .row2 .downDesenTxt a {
+        font-size: 6cqmin ;
+    }
+    main .expo h1{
+        font-size: 10cqmin;
+    }
+    main .row2 .testAppMobile .phoneBorder {
+        height: min-content;
+        width: 80vw;
+        aspect-ratio: 9/16;
+    }
+}

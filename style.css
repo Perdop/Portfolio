@@ -339,7 +339,7 @@ main{
 .aboutImgImg{
     border: solid 5px #B14242;
     border-radius: 100%;
-    background: url(img/bladeProfile.png  );
+    background: url(img/pedro.jpeg );
     width: 45cqmin;
     max-width: 90%;
     float: right;
@@ -347,6 +347,7 @@ main{
     background-position:center;
     background-size: 100%;
     box-shadow: 0 0 15px #B14242;
+    transform: scaleX(-1);
 }
 .aboutRow2{
     display: flex;
@@ -603,45 +604,44 @@ main{
 #darkModeCheck:checked ~ main .EcoExplora a:hover{
     color: #2c4766;
 }
-.Weather .projectImgLayout:hover{   
-    outline: solid 2px  rgb(255, 255, 255);
-    border: solid 1px rgb(255, 255, 255);
+.pathEduc .projectImgLayout:hover{   
+    outline: solid 2px  #f4c430;
+    border: solid 1px #f4c430;
 }
-.Weather img{
-    scale: 105%;
+.pathEduc img{
+    background-color: #ffffff;
+    width: 100%;
+    aspect-ratio: 1/1;
 }
-.Weather a:hover{
-    color: rgb(132, 167, 175);
+.pathEduc a:hover{
+    color: #f4c430;
 }
-.Weather .languageTag:hover{
-    outline: solid 3px rgb(132, 167, 175);
+.pathEduc .languageTag:hover{
+    outline: solid 3px #f4c430;
 }
-#darkModeCheck:checked ~ main .Weather a:hover{
-    color: rgb(132, 167, 175);
+#darkModeCheck:checked ~ main .pathEduc a:hover{
+    color: #f4c430;
 }
-#darkModeCheck:checked ~main .Weather a:hover{
+#darkModeCheck:checked ~main .pathEduc a:hover{
     text-shadow: 0 0 20px rgba(0, 0, 0, 0.747) !important; 
 }
-.TrashWalker .projectImgLayout{
-    background: url(projetos/trashWalker/img/ceuu.png);
-    background-size: 100%;
+.Velo .projectImgLayout img{
+    width: 100%;
+    aspect-ratio: 1/1;
 }
-.TrashWalker .projectImgLayout img{
-    width: 60%;
+.Velo .projectImgLayout:hover{   
+    outline: solid 2px  #f7bfd8;
+    border: solid 1px #f7bfd8;
 }
-.TrashWalker .projectImgLayout:hover{   
-    outline: solid 2px  #3fba0f;
-    border: solid 1px #3fba0f;
+.Velo a:hover{
+    color: #f7bfd8;
 }
-.TrashWalker a:hover{
-    color: #3fba0f;
+.Velo .languageTag:hover{
+    outline: solid 3px #f7bfd8;
 }
-.TrashWalker .languageTag:hover{
-    outline: solid 3px #3fba0f;
+#darkModeCheck:checked ~ main .Velo  a:hover{
+    color: #f7bfd8;
 }
-#darkModeCheck:checked ~ main .TrashWalker  a:hover{
-    color: #3fba0f;
-}
-#darkModeCheck:checked ~main .TrashWalker a:hover{
+#darkModeCheck:checked ~main .Velo a:hover{
     text-shadow: 0 0 20px rgba(0, 0, 0, 0.747) !important; 
 }

@@ -13,10 +13,10 @@
 }
 
 :root {
-    --cor-principal: #2d7aec; /* Azul */
-    --cor-secundaria: #61cc36; /* Verde */
-    --cor-txt1: #f3f3f3;
-    --cor-txt2: black;
+    --cor-principal: #fff7ad96; /* Azul */
+    --cor-secundaria: #ffa9f9; /* Verde */
+    --cor-txt1: #000000;
+    --cor-txt2: rgb(255, 255, 255);
 }
 
 *{
@@ -147,6 +147,7 @@ main .row .imgLogo{
 main .row .imgLogo img{
     height: 100%;
     aspect-ratio: 1/1;
+    border-radius: 10cqmin;
 }
 main .row .objTexTxt {
     margin-top: 30px;
